@@ -1,0 +1,7 @@
+[
+  {
+    "name": "registry",
+    "description": "Distribution implementation for storing and distributing of container images and artifacts",
+    "logo_url": "./icons/registry.png"
+  }
+]
