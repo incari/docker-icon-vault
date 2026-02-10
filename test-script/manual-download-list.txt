@@ -1,0 +1,28 @@
+# Manual Icon Download List
+# Download these icons manually and save to icons/ directory
+
+urbackup-server.png
+  Name: UrBackup
+  Docker: uroni/urbackup-server
+  Search: https://www.google.com/search?tbm=isch&q=UrBackup%20logo
+
+rainloop.png
+  Name: RainLoop
+  Docker: hardware/rainloop
+  Search: https://www.google.com/search?tbm=isch&q=RainLoop%20logo
+
+ubooquity.png
+  Name: Ubooquity
+  Docker: linuxserver/ubooquity
+  Search: https://www.google.com/search?tbm=isch&q=Ubooquity%20logo
+
+deluge.png
+  Name: Deluge
+  Docker: linuxserver/deluge
+  Search: https://www.google.com/search?tbm=isch&q=Deluge%20logo
+
+iobroker.png
+  Name: ioBroker
+  Docker: iobroker/iobroker
+  Search: https://www.google.com/search?tbm=isch&q=ioBroker%20logo
+

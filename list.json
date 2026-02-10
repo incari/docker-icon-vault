@@ -1,657 +1,1166 @@
 [
   {
-    "name": "memcached",
-    "description": "Free & open source, high-performance, distributed memory object caching system.",
-    "logo_url": "./icons/memcached.png"
-  },
-  {
-    "name": "nginx",
-    "description": "Official build of Nginx.",
-    "logo_url": "./icons/nginx.png"
-  },
-  {
-    "name": "busybox",
-    "description": "Busybox base image.",
-    "logo_url": "./icons/busybox.png"
-  },
-  {
-    "name": "alpine",
-    "description": "A minimal Docker image based on Alpine Linux with a complete package index and only 5 MB in size!",
-    "logo_url": "./icons/alpine.png"
-  },
-  {
-    "name": "redis",
-    "description": "Redis is the world’s fastest data platform for caching, vector search, and NoSQL databases.",
-    "logo_url": "./icons/redis.png"
-  },
-  {
-    "name": "postgres",
-    "description": "The PostgreSQL object-relational database system provides reliability and data integrity.",
-    "logo_url": "./icons/postgres.png"
-  },
-  {
-    "name": "ubuntu",
-    "description": "Ubuntu is a Debian-based Linux operating system based on free software.",
-    "logo_url": "./icons/ubuntu.png"
-  },
-  {
-    "name": "python",
-    "description": "Python is an interpreted, interactive, object-oriented, open-source programming language.",
-    "logo_url": "./icons/python.png"
-  },
-  {
-    "name": "node",
-    "description": "Node.js is a JavaScript-based platform for server-side and networking applications.",
-    "logo_url": "./icons/node.png"
-  },
-  {
-    "name": "mysql",
-    "description": "MySQL is a widely used, open-source relational database management system (RDBMS).",
-    "logo_url": "./icons/mysql.png"
-  },
-  {
-    "name": "mongo",
-    "description": "MongoDB document databases provide high availability and easy scalability.",
-    "logo_url": "./icons/mongo.png"
-  },
-  {
-    "name": "httpd",
-    "description": "The Apache HTTP Server Project",
-    "logo_url": "./icons/httpd.png"
-  },
-  {
-    "name": "rabbitmq",
-    "description": "RabbitMQ is an open source multi-protocol messaging broker.",
-    "logo_url": "./icons/rabbitmq.png"
-  },
-  {
-    "name": "traefik",
-    "description": "Traefik, The Cloud Native Edge Router",
-    "logo_url": "./icons/traefik.png"
-  },
-  {
-    "name": "docker",
-    "description": "Docker in Docker! (commonly known as \"dind\")",
-    "logo_url": "./icons/docker.png"
-  },
-  {
-    "name": "hello-world",
-    "description": "Hello World! (an example of minimal Dockerization)",
-    "logo_url": "./icons/hello-world.png"
-  },
-  {
-    "name": "mariadb",
-    "description": "MariaDB Server is a high performing open source relational database, forked from MySQL.",
-    "logo_url": "./icons/mariadb.png"
-  },
-  {
-    "name": "openjdk",
-    "description": "Pre-release / non-production builds of OpenJDK",
-    "logo_url": "./icons/openjdk.png"
-  },
-  {
-    "name": "golang",
-    "description": "Go (golang) is a general purpose, higher-level, imperative programming language.",
-    "logo_url": "./icons/golang.png"
-  },
-  {
-    "name": "debian",
-    "description": "Debian is a Linux distribution that's composed entirely of free and open-source software.",
-    "logo_url": "./icons/debian.png"
-  },
-  {
-    "name": "ruby",
-    "description": "Ruby is a dynamic, reflective, object-oriented, general-purpose, open-source programming language.",
-    "logo_url": "./icons/ruby.png"
-  },
-  {
-    "name": "wordpress",
-    "description": "The WordPress rich content management system can utilize plugins, widgets, and themes.",
-    "logo_url": "./icons/wordpress.png"
-  },
-  {
-    "name": "php",
-    "description": "While designed for web development, the PHP scripting language also provides general-purpose use.",
-    "logo_url": "./icons/php.png"
-  },
-  {
-    "name": "sonarqube",
-    "description": "Official images for SonarQube, code analysis tool for code quality and security",
-    "logo_url": "./icons/sonarqube.png"
-  },
-  {
-    "name": "haproxy",
-    "description": "HAProxy - The Reliable, High Performance TCP/HTTP Load Balancer",
-    "logo_url": "./icons/haproxy.png"
-  },
-  {
-    "name": "influxdb",
-    "description": "InfluxDB is the open source time series database built for real-time analytic workloads.",
-    "logo_url": "./icons/influxdb.png"
-  },
-  {
-    "name": "consul",
-    "description": "Consul is a datacenter runtime that provides service discovery, configuration, and orchestration.",
-    "logo_url": "./icons/consul.png"
-  },
-  {
-    "name": "nextcloud",
-    "description": "Nextcloud manual docker image",
-    "logo_url": "./icons/nextcloud.png"
-  },
-  {
-    "name": "amazonlinux",
-    "description": "Amazon Linux provides a stable, secure, and high-performance execution environment for applications.",
-    "logo_url": "./icons/amazonlinux.png"
-  },
-  {
-    "name": "elasticsearch",
-    "description": "Elasticsearch is a powerful open source search and analytics engine that makes data easy to explore.",
-    "logo_url": "./icons/elasticsearch.png"
-  },
-  {
-    "name": "tomcat",
-    "description": "Apache Tomcat is an open source implementation of the Java Servlet and JavaServer Pages technologies",
-    "logo_url": "./icons/tomcat.png"
-  },
-  {
-    "name": "maven",
-    "description": "Apache Maven is a software project management and comprehension tool.",
-    "logo_url": "./icons/maven.png"
-  },
-  {
-    "name": "caddy",
-    "description": "Caddy 2 is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go.",
-    "logo_url": "./icons/caddy.png"
-  },
-  {
-    "name": "eclipse-mosquitto",
-    "description": "Eclipse Mosquitto is an open source message broker which implements MQTT version 5, 3.1.1 and 3.1",
-    "logo_url": "./icons/eclipse-mosquitto.png"
-  },
-  {
-    "name": "telegraf",
-    "description": "Telegraf is an agent for collecting metrics and writing them to InfluxDB or other outputs.",
-    "logo_url": "./icons/telegraf.png"
-  },
-  {
-    "name": "vault",
-    "description": "Vault is a tool for securely accessing secrets via a unified interface and tight access control.",
-    "logo_url": "./icons/vault.png"
-  },
-  {
-    "name": "bash",
-    "description": "Bash is the GNU Project's Bourne Again SHell",
-    "logo_url": "./icons/bash.png"
-  },
-  {
     "name": "adminer",
+    "image_name": "adminer",
     "description": "Database management in a single PHP file.",
     "logo_url": "./icons/adminer.png"
   },
   {
-    "name": "ghost",
-    "description": "Publish by web and email newsletter, with member signups and subscription payments.",
-    "logo_url": "./icons/ghost.png"
+    "name": "aerospike",
+    "image_name": "aerospike",
+    "description": "Aerospike – the reliable, high performance, distributed database optimized for flash and RAM.",
+    "logo_url": "./icons/aerospike.png"
   },
   {
-    "name": "solr",
-    "description": "Solr is the blazing-fast, open source, multi-modal search platform built on Apache Lucene.",
-    "logo_url": "./icons/solr.png"
+    "name": "airsonic",
+    "image_name": "airsonic/airsonic",
+    "description": "Airsonic Media Server",
+    "logo_url": "icons/airsonic-airsonic.png"
   },
   {
-    "name": "kong",
-    "description": "The Cloud-Native API Gateway for APIs and Microservices",
-    "logo_url": "./icons/kong.png"
+    "name": "alertmanager",
+    "image_name": "prom/alertmanager",
+    "description": "prom/alertmanager",
+    "logo_url": "icons/prom-alertmanager.png"
   },
   {
-    "name": "zookeeper",
-    "description": "Apache ZooKeeper is an open-source server which enables highly reliable distributed coordination.",
-    "logo_url": "./icons/zookeeper.png"
+    "name": "all-in-one",
+    "image_name": "funkwhale/all-in-one",
+    "description": "DON'T USE! https://blog.funkwhale.audio/deprecation-all-in-one-container.html",
+    "logo_url": "icons/funkwhale-all-in-one.webp"
   },
   {
-    "name": "neo4j",
-    "description": "Neo4j is a highly scalable, robust native graph database.",
-    "logo_url": "./icons/neo4j.png"
+    "name": "almalinux",
+    "image_name": "almalinux",
+    "description": "The official build of AlmaLinux OS.",
+    "logo_url": "./icons/almalinux.png"
   },
   {
-    "name": "gradle",
-    "description": "Gradle is a fast, reliable, and flexible open-source build tool with an elegant, extensible DSL.",
-    "logo_url": "./icons/gradle.png"
+    "name": "alpine",
+    "image_name": "alpine",
+    "description": "A minimal Docker image based on Alpine Linux with a complete package index and only 5 MB in size!",
+    "logo_url": "./icons/alpine.png"
   },
   {
-    "name": "perl",
-    "description": "Perl is a high-level, general-purpose, interpreted, dynamic programming language.",
-    "logo_url": "./icons/perl.png"
-  },
-  {
-    "name": "buildpack-deps",
-    "description": "A collection of common build dependencies used for installing various modules, e.g., gems.",
-    "logo_url": "./icons/buildpack-deps.png"
-  },
-  {
-    "name": "eclipse-temurin",
-    "description": "Official Images for OpenJDK binaries built by Eclipse Temurin.",
-    "logo_url": "./icons/eclipse-temurin.png"
-  },
-  {
-    "name": "cassandra",
-    "description": "Apache Cassandra is an open-source distributed storage system.",
-    "logo_url": "./icons/cassandra.png"
-  },
-  {
-    "name": "nats",
-    "description": "NATS is an open-source, high-performance, cloud native messaging system.",
-    "logo_url": "./icons/nats.png"
-  },
-  {
-    "name": "kibana",
-    "description": "Kibana gives shape to any kind of data — structured and unstructured — indexed in Elasticsearch.",
-    "logo_url": "./icons/kibana.png"
-  },
-  {
-    "name": "percona",
-    "description": "Percona Server is a fork of the MySQL relational database management system created by Percona.",
-    "logo_url": "./icons/percona.png"
-  },
-  {
-    "name": "drupal",
-    "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-    "logo_url": "./icons/drupal.png"
-  },
-  {
-    "name": "composer",
-    "description": "Composer is a dependency manager written in and for PHP.",
-    "logo_url": "./icons/composer.png"
-  },
-  {
-    "name": "logstash",
-    "description": "Logstash is a tool for managing events and logs.",
-    "logo_url": "./icons/logstash.png"
-  },
-  {
-    "name": "couchdb",
-    "description": "CouchDB is a database that uses JSON for documents, an HTTP API, & JavaScript/declarative indexing.",
-    "logo_url": "./icons/couchdb.png"
-  },
-  {
-    "name": "chronograf",
-    "description": "Chronograf is a visualization tool for time series data in InfluxDB.",
-    "logo_url": "./icons/chronograf.png"
-  },
-  {
-    "name": "matomo",
-    "description": "Matomo is the leading open-source analytics platform that gives you more than powerful analytics.",
-    "logo_url": "./icons/matomo.png"
-  },
-  {
-    "name": "fedora",
-    "description": "Official Docker builds of Fedora",
-    "logo_url": "./icons/fedora.png"
+    "name": "alt",
+    "image_name": "alt",
+    "description": "The official build of ALT Linux.",
+    "logo_url": "./icons/alt.png"
   },
   {
     "name": "amazoncorretto",
+    "image_name": "amazoncorretto",
     "description": "Corretto is a no-cost, production-ready distribution of the Open Java Development Kit (OpenJDK).",
     "logo_url": "./icons/amazoncorretto.png"
   },
   {
-    "name": "rust",
-    "description": "Rust is a systems programming language focused on safety, speed, and concurrency.",
-    "logo_url": "./icons/rust.png"
+    "name": "amazonlinux",
+    "image_name": "amazonlinux",
+    "description": "Amazon Linux provides a stable, secure, and high-performance execution environment for applications.",
+    "logo_url": "./icons/amazonlinux.png"
   },
   {
-    "name": "flink",
-    "description": "Apache Flink® is a powerful open-source distributed stream and batch processing framework.",
-    "logo_url": "./icons/flink.png"
+    "name": "ampache",
+    "image_name": "ampache/ampache",
+    "description": "Ampache ...for the love of music - https://ampache.org",
+    "logo_url": "icons/ampache-ampache.png"
+  },
+  {
+    "name": "analytics",
+    "image_name": "plausible/analytics",
+    "description": "Simple, lightweight analytics for your website",
+    "logo_url": "icons/plausible-analytics.png"
+  },
+  {
+    "name": "api-firewall",
+    "image_name": "api-firewall",
+    "description": "A light-weighted API Firewall to protect your API endpoints with API Schema validation.",
+    "logo_url": "./icons/api-firewall.png"
+  },
+  {
+    "name": "arangodb",
+    "image_name": "arangodb",
+    "description": "ArangoDB - a scalable graph database system to drive value from connected data, faster.",
+    "logo_url": "./icons/arangodb.png"
+  },
+  {
+    "name": "archlinux",
+    "image_name": "archlinux",
+    "description": "Arch Linux is a simple, lightweight Linux distribution aimed for flexibility.",
+    "logo_url": "./icons/archlinux.png"
+  },
+  {
+    "name": "audiobookshelf",
+    "image_name": "advplyr/audiobookshelf",
+    "description": "Self-hosted audiobook and podcast server",
+    "logo_url": "icons/advplyr-audiobookshelf.png"
+  },
+  {
+    "name": "authelia",
+    "image_name": "authelia/authelia",
+    "description": "The Cloud ready multi-factor authentication portal for your Apps https://www.authelia.com",
+    "logo_url": "icons/authelia-authelia.png"
+  },
+  {
+    "name": "backdrop",
+    "image_name": "backdrop",
+    "description": "The comprehensive CMS for small to medium sized businesses and non-profits.",
+    "logo_url": "./icons/backdrop.png"
+  },
+  {
+    "name": "bash",
+    "image_name": "bash",
+    "description": "Bash is the GNU Project's Bourne Again SHell",
+    "logo_url": "./icons/bash.png"
+  },
+  {
+    "name": "bazarr",
+    "image_name": "linuxserver/bazarr",
+    "description": "Bazarr Docker image",
+    "logo_url": "icons/linuxserver-bazarr.png"
+  },
+  {
+    "name": "bonita",
+    "image_name": "bonita",
+    "description": "Bonita is an open-source business process management and workflow suite",
+    "logo_url": "./icons/bonita.png"
+  },
+  {
+    "name": "buildpack-deps",
+    "image_name": "buildpack-deps",
+    "description": "A collection of common build dependencies used for installing various modules, e.g., gems.",
+    "logo_url": "./icons/buildpack-deps.png"
+  },
+  {
+    "name": "busybox",
+    "image_name": "busybox",
+    "description": "Busybox base image.",
+    "logo_url": "./icons/busybox.png"
+  },
+  {
+    "name": "caddy",
+    "image_name": "caddy",
+    "description": "Caddy 2 is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go.",
+    "logo_url": "./icons/caddy.png"
+  },
+  {
+    "name": "calibre-web",
+    "image_name": "linuxserver/calibre-web",
+    "description": "A Calibre-Web container, brought to you by LinuxServer.io.",
+    "logo_url": "icons/linuxserver-calibre-web.svg"
+  },
+  {
+    "name": "cassandra",
+    "image_name": "cassandra",
+    "description": "Apache Cassandra is an open-source distributed storage system.",
+    "logo_url": "./icons/cassandra.png"
+  },
+  {
+    "name": "chronograf",
+    "image_name": "chronograf",
+    "description": "Chronograf is a visualization tool for time series data in InfluxDB.",
+    "logo_url": "./icons/chronograf.png"
+  },
+  {
+    "name": "cirros",
+    "image_name": "cirros",
+    "description": "CirrOS is a Tiny OS that specializes in running on a cloud.",
+    "logo_url": "./icons/cirros.png"
+  },
+  {
+    "name": "clickhouse",
+    "image_name": "clickhouse",
+    "description": "ClickHouse is the fastest and most resource efficient OSS database for real-time apps and analytics.",
+    "logo_url": "./icons/clickhouse.png"
+  },
+  {
+    "name": "clojure",
+    "image_name": "clojure",
+    "description": "Clojure is a dialect of Lisp that runs on the JVM.",
+    "logo_url": "./icons/clojure.png"
+  },
+  {
+    "name": "cockroach",
+    "image_name": "cockroachdb/cockroach",
+    "description": "CockroachDB — Distributed SQL database for always-on customer experiences",
+    "logo_url": "icons/cockroachdb-cockroach.svg"
+  },
+  {
+    "name": "composer",
+    "image_name": "composer",
+    "description": "Composer is a dependency manager written in and for PHP.",
+    "logo_url": "./icons/composer.png"
+  },
+  {
+    "name": "consul",
+    "image_name": "consul",
+    "description": "Consul is a datacenter runtime that provides service discovery, configuration, and orchestration.",
+    "logo_url": "./icons/consul.png"
+  },
+  {
+    "name": "consul",
+    "image_name": "hashicorp/consul",
+    "description": "Automatic build of consul based on the current release. See README for more information on usage.",
+    "logo_url": "icons/hashicorp-consul.png"
+  },
+  {
+    "name": "convertigo",
+    "image_name": "convertigo",
+    "description": "Enterprise grade full-stack Open source Low Code & No Code Platform for web & mobile application",
+    "logo_url": "./icons/convertigo.png"
   },
   {
     "name": "couchbase",
+    "image_name": "couchbase",
     "description": "Couchbase Server is a NoSQL document database with a distributed architecture.",
     "logo_url": "./icons/couchbase.png"
   },
   {
-    "name": "joomla",
-    "description": "Joomla! is an open source content management system.",
-    "logo_url": "./icons/joomla.png"
+    "name": "couchdb",
+    "image_name": "couchdb",
+    "description": "CouchDB is a database that uses JSON for documents, an HTTP API, & JavaScript/declarative indexing.",
+    "logo_url": "./icons/couchdb.png"
   },
   {
-    "name": "phpmyadmin",
-    "description": "phpMyAdmin - A web interface for MySQL and MariaDB.",
-    "logo_url": "./icons/phpmyadmin.png"
+    "name": "crate",
+    "image_name": "crate",
+    "description": "CrateDB is an open-source, distributed SQL database empowering you to turn data into business value.",
+    "logo_url": "./icons/crate.png"
+  },
+  {
+    "name": "dart",
+    "image_name": "dart",
+    "description": "Dart is a client-optimized language for fast apps on any platform.",
+    "logo_url": "./icons/dart.png"
+  },
+  {
+    "name": "debian",
+    "image_name": "debian",
+    "description": "Debian is a Linux distribution that's composed entirely of free and open-source software.",
+    "logo_url": "./icons/debian.png"
+  },
+  {
+    "name": "deluge",
+    "image_name": "linuxserver/deluge",
+    "description": "A Deluge container, brought to you by LinuxServer.io. ",
+    "logo_url": "icons/linuxserver-deluge.svg"
+  },
+  {
+    "name": "docker",
+    "image_name": "docker",
+    "description": "Docker in Docker! (commonly known as \"dind\")",
+    "logo_url": "./icons/docker.png"
+  },
+  {
+    "name": "drone",
+    "image_name": "drone/drone",
+    "description": "Drone is a Continuous Integration platform built on Docker",
+    "logo_url": "icons/drone-drone.svg"
+  },
+  {
+    "name": "drupal",
+    "image_name": "drupal",
+    "description": "Drupal is an open source content management platform powering millions of websites and applications.",
+    "logo_url": "./icons/drupal.png"
+  },
+  {
+    "name": "duplicati",
+    "image_name": "linuxserver/duplicati",
+    "description": "A Duplicati container, brought to you by LinuxServer.io.\n",
+    "logo_url": "icons/linuxserver-duplicati.png"
+  },
+  {
+    "name": "eclipse-mosquitto",
+    "image_name": "eclipse-mosquitto",
+    "description": "Eclipse Mosquitto is an open source message broker which implements MQTT version 5, 3.1.1 and 3.1",
+    "logo_url": "./icons/eclipse-mosquitto.png"
+  },
+  {
+    "name": "eclipse-temurin",
+    "image_name": "eclipse-temurin",
+    "description": "Official Images for OpenJDK binaries built by Eclipse Temurin.",
+    "logo_url": "./icons/eclipse-temurin.png"
+  },
+  {
+    "name": "eggdrop",
+    "image_name": "eggdrop",
+    "description": "The official Docker image of Eggdrop- IRC's oldest actively-developed bot!",
+    "logo_url": "./icons/eggdrop.png"
+  },
+  {
+    "name": "elasticsearch",
+    "image_name": "elasticsearch",
+    "description": "Elasticsearch is a powerful open source search and analytics engine that makes data easy to explore.",
+    "logo_url": "./icons/elasticsearch.png"
+  },
+  {
+    "name": "elixir",
+    "image_name": "elixir",
+    "description": "Elixir is a dynamic, functional language for building scalable and maintainable applications.",
+    "logo_url": "./icons/elixir.png"
+  },
+  {
+    "name": "erlang",
+    "image_name": "erlang",
+    "description": "Erlang is a programming language used to build massively scalable systems with high availability.",
+    "logo_url": "./icons/erlang.png"
+  },
+  {
+    "name": "erpnext",
+    "image_name": "erpnext/erpnext",
+    "description": "ERPNext Docker image",
+    "logo_url": "icons/erpnext-erpnext.svg"
+  },
+  {
+    "name": "fedora",
+    "image_name": "fedora",
+    "description": "Official Docker builds of Fedora",
+    "logo_url": "./icons/fedora.png"
+  },
+  {
+    "name": "flaum (nota: comunidad usa variantes)",
+    "image_name": "flaum/flaum (nota: comunidad usa variantes)",
+    "description": "Flarum Docker image",
+    "logo_url": "icons/flaum-flaum.png"
+  },
+  {
+    "name": "flink",
+    "image_name": "flink",
+    "description": "Apache Flink® is a powerful open-source distributed stream and batch processing framework.",
+    "logo_url": "./icons/flink.png"
+  },
+  {
+    "name": "fluentd",
+    "image_name": "fluentd",
+    "description": "Fluentd is an open source data collector for unified logging layer",
+    "logo_url": "./icons/fluentd.png"
+  },
+  {
+    "name": "friendica",
+    "image_name": "friendica",
+    "description": "Welcome to the free social web.",
+    "logo_url": "./icons/friendica.png"
+  },
+  {
+    "name": "gazebo",
+    "image_name": "gazebo",
+    "description": "Gazebo is an open source project for simulating robots, offering robust physics and rendering.",
+    "logo_url": "./icons/gazebo.png"
+  },
+  {
+    "name": "gcc",
+    "image_name": "gcc",
+    "description": "The GNU Compiler Collection is a compiling system that supports several languages.",
+    "logo_url": "./icons/gcc.png"
+  },
+  {
+    "name": "geonetwork",
+    "image_name": "geonetwork",
+    "description": "GeoNetwork is a FOSS catalog for spatially referenced resources.",
+    "logo_url": "./icons/geonetwork.png"
+  },
+  {
+    "name": "ghost",
+    "image_name": "ghost",
+    "description": "Publish by web and email newsletter, with member signups and subscription payments.",
+    "logo_url": "./icons/ghost.png"
+  },
+  {
+    "name": "gitlab",
+    "image_name": "gitlab/gitlab-ce",
+    "description": "GitLab Community Edition docker image based on the Omnibus package",
+    "logo_url": "icons/gitlab-gitlab-ce.svg"
+  },
+  {
+    "name": "gluetun",
+    "image_name": "qmcgaw/gluetun",
+    "description": "Lightweight Swiss-knife VPN client to connect to several VPN providers",
+    "logo_url": "icons/qmcgaw-gluetun.png"
+  },
+  {
+    "name": "golang",
+    "image_name": "golang",
+    "description": "Go (golang) is a general purpose, higher-level, imperative programming language.",
+    "logo_url": "./icons/golang.png"
+  },
+  {
+    "name": "gradle",
+    "image_name": "gradle",
+    "description": "Gradle is a fast, reliable, and flexible open-source build tool with an elegant, extensible DSL.",
+    "logo_url": "./icons/gradle.png"
   },
   {
     "name": "groovy",
+    "image_name": "groovy",
     "description": "Apache Groovy is a multi-faceted language for the Java platform.",
     "logo_url": "./icons/groovy.png"
   },
   {
+    "name": "haproxy",
+    "image_name": "haproxy",
+    "description": "HAProxy - The Reliable, High Performance TCP/HTTP Load Balancer",
+    "logo_url": "./icons/haproxy.png"
+  },
+  {
+    "name": "harbor-core",
+    "image_name": "goharbor/harbor-core",
+    "description": "Harbor Docker image",
+    "logo_url": "icons/goharbor-harbor-core.svg"
+  },
+  {
+    "name": "haskell",
+    "image_name": "haskell",
+    "description": "Haskell is an advanced purely-functional programming language.",
+    "logo_url": "./icons/haskell.png"
+  },
+  {
+    "name": "haxe",
+    "image_name": "haxe",
+    "description": "Haxe is a modern, high level, static typed programming language with multiple compilation targets.",
+    "logo_url": "./icons/haxe.png"
+  },
+  {
+    "name": "hello-world",
+    "image_name": "hello-world",
+    "description": "Hello World! (an example of minimal Dockerization)",
+    "logo_url": "./icons/hello-world.png"
+  },
+  {
+    "name": "hitch",
+    "image_name": "hitch",
+    "description": "Hitch is a libev-based high performance SSL/TLS proxy by Varnish Software.",
+    "logo_url": "./icons/hitch.png"
+  },
+  {
+    "name": "home-assistant",
+    "image_name": "homeassistant/home-assistant",
+    "description": "Open source home automation that puts local control and privacy first. ",
+    "logo_url": "icons/homeassistant-home-assistant.png"
+  },
+  {
+    "name": "httpd",
+    "image_name": "httpd",
+    "description": "The Apache HTTP Server Project",
+    "logo_url": "./icons/httpd.png"
+  },
+  {
+    "name": "hylang",
+    "image_name": "hylang",
+    "description": "Hy is a Lisp dialect that translates expressions into Python's abstract syntax tree.",
+    "logo_url": "./icons/hylang.png"
+  },
+  {
+    "name": "ibm-semeru-runtimes",
+    "image_name": "ibm-semeru-runtimes",
+    "description": "IBM Semeru Runtimes Official Images for OpenJDK and Eclipse OpenJ9 binaries.",
+    "logo_url": "./icons/ibm-semeru-runtimes.png"
+  },
+  {
+    "name": "ibmjava",
+    "image_name": "ibmjava",
+    "description": "Official IBM® SDK, Java™ Technology Edition Docker Image.",
+    "logo_url": "./icons/ibmjava.png"
+  },
+  {
+    "name": "influxdb",
+    "image_name": "influxdb",
+    "description": "InfluxDB is the open source time series database built for real-time analytic workloads.",
+    "logo_url": "./icons/influxdb.png"
+  },
+  {
+    "name": "invoiceninja",
+    "image_name": "invoiceninja/invoiceninja",
+    "description": "Invoices, Expenses and Tasks built with Laravel, Flutter and React",
+    "logo_url": "icons/invoiceninja-invoiceninja.png"
+  },
+  {
+    "name": "irssi",
+    "image_name": "irssi",
+    "description": "irssi - The IRC client of the future",
+    "logo_url": "./icons/irssi.png"
+  },
+  {
+    "name": "jackett",
+    "image_name": "linuxserver/jackett",
+    "description": "A Jackett container, brought to you by LinuxServer.io. ",
+    "logo_url": "icons/linuxserver-jackett.svg"
+  },
+  {
+    "name": "jetty",
+    "image_name": "jetty",
+    "description": "Jetty provides a Web server and javax.servlet container.",
+    "logo_url": "./icons/jetty.png"
+  },
+  {
+    "name": "joomla",
+    "image_name": "joomla",
+    "description": "Joomla! is an open source content management system.",
+    "logo_url": "./icons/joomla.png"
+  },
+  {
+    "name": "jruby",
+    "image_name": "jruby",
+    "description": "JRuby (http://www.jruby.org) is an implementation of Ruby (http://www.ruby-lang.org) on the JVM.",
+    "logo_url": "./icons/jruby.png"
+  },
+  {
+    "name": "julia",
+    "image_name": "julia",
+    "description": "Julia is a high-level, high-performance dynamic programming language for technical computing.",
+    "logo_url": "./icons/julia.png"
+  },
+  {
+    "name": "kapacitor",
+    "image_name": "kapacitor",
+    "description": "Kapacitor is an open source framework for processing, monitoring, and alerting on time series data.",
+    "logo_url": "./icons/kapacitor.png"
+  },
+  {
+    "name": "kibana",
+    "image_name": "kibana",
+    "description": "Kibana gives shape to any kind of data — structured and unstructured — indexed in Elasticsearch.",
+    "logo_url": "./icons/kibana.png"
+  },
+  {
+    "name": "kong",
+    "image_name": "kong",
+    "description": "The Cloud-Native API Gateway for APIs and Microservices",
+    "logo_url": "./icons/kong.png"
+  },
+  {
+    "name": "krakend",
+    "image_name": "krakend",
+    "description": "KrakenD is a stateless, high-performance, enterprise-ready, open source API gateway written in Go.",
+    "logo_url": "./icons/krakend.png"
+  },
+  {
+    "name": "lidarr",
+    "image_name": "linuxserver/lidarr",
+    "description": "Lidarr Docker image",
+    "logo_url": "icons/linuxserver-lidarr.svg"
+  },
+  {
+    "name": "lightstreamer",
+    "image_name": "lightstreamer",
+    "description": "Lightstreamer is a real-time messaging server optimized for the Internet.",
+    "logo_url": "./icons/lightstreamer.png"
+  },
+  {
+    "name": "logstash",
+    "image_name": "logstash",
+    "description": "Logstash is a tool for managing events and logs.",
+    "logo_url": "./icons/logstash.png"
+  },
+  {
+    "name": "loki",
+    "image_name": "grafana/loki",
+    "description": "Loki - Cloud Native Log Aggregation by Grafana",
+    "logo_url": "icons/grafana-loki.png"
+  },
+  {
+    "name": "mageia",
+    "image_name": "mageia",
+    "description": "Official Mageia base image",
+    "logo_url": "./icons/mageia.png"
+  },
+  {
+    "name": "mailu",
+    "image_name": "mailu/mailu",
+    "description": "Mailu Docker image",
+    "logo_url": "icons/mailu-mailu.webp"
+  },
+  {
+    "name": "mariadb",
+    "image_name": "mariadb",
+    "description": "MariaDB Server is a high performing open source relational database, forked from MySQL.",
+    "logo_url": "./icons/mariadb.png"
+  },
+  {
+    "name": "matomo",
+    "image_name": "matomo",
+    "description": "Matomo is the leading open-source analytics platform that gives you more than powerful analytics.",
+    "logo_url": "./icons/matomo.png"
+  },
+  {
+    "name": "maven",
+    "image_name": "maven",
+    "description": "Apache Maven is a software project management and comprehension tool.",
+    "logo_url": "./icons/maven.png"
+  },
+  {
+    "name": "mediawiki",
+    "image_name": "mediawiki",
+    "description": "MediaWiki is a free software open source wiki package written in PHP.",
+    "logo_url": "./icons/mediawiki.png"
+  },
+  {
+    "name": "memcached",
+    "image_name": "memcached",
+    "description": "Free & open source, high-performance, distributed memory object caching system.",
+    "logo_url": "./icons/memcached.png"
+  },
+  {
+    "name": "minio",
+    "image_name": "minio/minio",
+    "description": "Multi-Cloud Object Storage",
+    "logo_url": "icons/minio-minio.png"
+  },
+  {
+    "name": "mongo",
+    "image_name": "mongo",
+    "description": "MongoDB document databases provide high availability and easy scalability.",
+    "logo_url": "./icons/mongo.png"
+  },
+  {
+    "name": "monica",
+    "image_name": "monica",
+    "description": "Monica – the Personal Relationship Manager.",
+    "logo_url": "./icons/monica.png"
+  },
+  {
+    "name": "mysql",
+    "image_name": "mysql",
+    "description": "MySQL is a widely used, open-source relational database management system (RDBMS).",
+    "logo_url": "./icons/mysql.png"
+  },
+  {
+    "name": "nats",
+    "image_name": "nats",
+    "description": "NATS is an open-source, high-performance, cloud native messaging system.",
+    "logo_url": "./icons/nats.png"
+  },
+  {
+    "name": "navidrome",
+    "image_name": "deluan/navidrome",
+    "description": "Official image for Navidrome Music Server",
+    "logo_url": "icons/deluan-navidrome.png"
+  },
+  {
+    "name": "neo4j",
+    "image_name": "neo4j",
+    "description": "Neo4j is a highly scalable, robust native graph database.",
+    "logo_url": "./icons/neo4j.png"
+  },
+  {
+    "name": "netdata",
+    "image_name": "netdata/netdata",
+    "description": "The official image for monitoring systems, containers and applications with Netdata.",
+    "logo_url": "icons/netdata-netdata.png"
+  },
+  {
+    "name": "neurodebian",
+    "image_name": "neurodebian",
+    "description": "NeuroDebian provides neuroscience research software for Debian, Ubuntu, and other derivatives.",
+    "logo_url": "./icons/neurodebian.png"
+  },
+  {
+    "name": "nextcloud",
+    "image_name": "nextcloud",
+    "description": "Nextcloud manual docker image",
+    "logo_url": "./icons/nextcloud.png"
+  },
+  {
+    "name": "nginx",
+    "image_name": "nginx",
+    "description": "Official build of Nginx.",
+    "logo_url": "./icons/nginx.png"
+  },
+  {
+    "name": "nginx-proxy-manager",
+    "image_name": "jc21/nginx-proxy-manager",
+    "description": "Docker container for managing Nginx proxy hosts with a simple, powerful interface",
+    "logo_url": "icons/jc21-nginx-proxy-manager.png"
+  },
+  {
+    "name": "node",
+    "image_name": "node",
+    "description": "Node.js is a JavaScript-based platform for server-side and networking applications.",
+    "logo_url": "./icons/node.png"
+  },
+  {
+    "name": "node-red",
+    "image_name": "nodered/node-red",
+    "description": "Low-code programming for event-driven applications",
+    "logo_url": "icons/nodered-node-red.svg"
+  },
+  {
+    "name": "nzbget",
+    "image_name": "linuxserver/nzbget",
+    "description": "An Nzbget container, brought to you by LinuxServer.io. ",
+    "logo_url": "icons/linuxserver-nzbget.png"
+  },
+  {
+    "name": "odoo",
+    "image_name": "odoo",
+    "description": "Odoo (formerly known as OpenERP) is a suite of open-source business apps.",
+    "logo_url": "./icons/odoo.png"
+  },
+  {
+    "name": "open-liberty",
+    "image_name": "open-liberty",
+    "description": "Open Liberty multi-architecture images based on Ubuntu",
+    "logo_url": "./icons/open-liberty.png"
+  },
+  {
+    "name": "openhab",
+    "image_name": "openhab/openhab",
+    "description": "openHAB - a vendor and technology agnostic open source automation software for your home.",
+    "logo_url": "icons/openhab-openhab.png"
+  },
+  {
+    "name": "openjdk",
+    "image_name": "openjdk",
+    "description": "Pre-release / non-production builds of OpenJDK",
+    "logo_url": "./icons/openjdk.png"
+  },
+  {
+    "name": "openproject",
+    "image_name": "openproject/openproject",
+    "description": "Docker image for OpenProject Community and Enterprise editions.",
+    "logo_url": "icons/openproject-openproject.png"
+  },
+  {
+    "name": "openvpn",
+    "image_name": "kylemanna/openvpn",
+    "description": "🔒 OpenVPN server in a Docker container complete with an EasyRSA PKI CA",
+    "logo_url": "icons/kylemanna-openvpn.png"
+  },
+  {
+    "name": "oraclelinux",
+    "image_name": "oraclelinux",
+    "description": "Official Docker builds of Oracle Linux.",
+    "logo_url": "./icons/oraclelinux.png"
+  },
+  {
+    "name": "orientdb",
+    "image_name": "orientdb",
+    "description": "OrientDB a Multi-Model Open Source NoSQL DBMS that combines graphs and documents.",
+    "logo_url": "./icons/orientdb.png"
+  },
+  {
+    "name": "percona",
+    "image_name": "percona",
+    "description": "Percona Server is a fork of the MySQL relational database management system created by Percona.",
+    "logo_url": "./icons/percona.png"
+  },
+  {
+    "name": "perl",
+    "image_name": "perl",
+    "description": "Perl is a high-level, general-purpose, interpreted, dynamic programming language.",
+    "logo_url": "./icons/perl.png"
+  },
+  {
+    "name": "photon",
+    "image_name": "photon",
+    "description": "Photon OS is an open source minimal Linux container host.",
+    "logo_url": "./icons/photon.png"
+  },
+  {
+    "name": "php",
+    "image_name": "php",
+    "description": "While designed for web development, the PHP scripting language also provides general-purpose use.",
+    "logo_url": "./icons/php.png"
+  },
+  {
+    "name": "phpmyadmin",
+    "image_name": "phpmyadmin",
+    "description": "phpMyAdmin - A web interface for MySQL and MariaDB.",
+    "logo_url": "./icons/phpmyadmin.png"
+  },
+  {
+    "name": "pms-docker",
+    "image_name": "plexinc/pms-docker",
+    "description": "Official Plex Media Server Docker Repo",
+    "logo_url": "icons/plexinc-pms-docker.png"
+  },
+  {
+    "name": "portainer",
+    "image_name": "portainer/portainer-ce",
+    "description": "Portainer CE - a lightweight service delivery platform for containerized applications ",
+    "logo_url": "icons/portainer-portainer-ce.svg"
+  },
+  {
+    "name": "postfixadmin",
+    "image_name": "postfixadmin",
+    "description": "Postfix Admin - web based administration interface for Postfix mail servers.",
+    "logo_url": "./icons/postfixadmin.png"
+  },
+  {
+    "name": "postgres",
+    "image_name": "postgres",
+    "description": "The PostgreSQL object-relational database system provides reliability and data integrity.",
+    "logo_url": "./icons/postgres.png"
+  },
+  {
+    "name": "pypy",
+    "image_name": "pypy",
+    "description": "PyPy is a fast, compliant alternative implementation of the Python language.",
+    "logo_url": "./icons/pypy.png"
+  },
+  {
+    "name": "python",
+    "image_name": "python",
+    "description": "Python is an interpreted, interactive, object-oriented, open-source programming language.",
+    "logo_url": "./icons/python.png"
+  },
+  {
+    "name": "r-base",
+    "image_name": "r-base",
+    "description": "R is a system for statistical computation and graphics.",
+    "logo_url": "./icons/r-base.png"
+  },
+  {
+    "name": "rabbitmq",
+    "image_name": "rabbitmq",
+    "description": "RabbitMQ is an open source multi-protocol messaging broker.",
+    "logo_url": "./icons/rabbitmq.png"
+  },
+  {
+    "name": "radarr",
+    "image_name": "linuxserver/radarr",
+    "description": "A Radarr container, brought to you by LinuxServer.io.",
+    "logo_url": "icons/linuxserver-radarr.png"
+  },
+  {
+    "name": "rainloop",
+    "image_name": "hardware/rainloop",
+    "description": "Rainloop is a simple, modern & fast web-based email client.",
+    "logo_url": "icons/hardware-rainloop.png"
+  },
+  {
+    "name": "rakudo-star",
+    "image_name": "rakudo-star",
+    "description": "Rakudo is a compiler for the Raku programming language.",
+    "logo_url": "./icons/rakudo-star.png"
+  },
+  {
+    "name": "rancher",
+    "image_name": "rancher/rancher",
+    "description": "A container management platform built for organizations that deploy containers in production. ",
+    "logo_url": "icons/rancher-rancher.png"
+  },
+  {
+    "name": "rclone",
+    "image_name": "rclone/rclone",
+    "description": "Rclone syncs files and directories to and from different cloud storage providers.",
+    "logo_url": "icons/rclone-rclone.png"
+  },
+  {
+    "name": "redash",
+    "image_name": "redash/redash",
+    "description": "Official Docker images for the Redash project.",
+    "logo_url": "icons/redash-redash.png"
+  },
+  {
+    "name": "redis",
+    "image_name": "redis",
+    "description": "Redis is the world’s fastest data platform for caching, vector search, and NoSQL databases.",
+    "logo_url": "./icons/redis.png"
+  },
+  {
+    "name": "redmine",
+    "image_name": "redmine",
+    "description": "Redmine is a flexible project management web application written using Ruby on Rails framework",
+    "logo_url": "./icons/redmine.png"
+  },
+  {
+    "name": "registry",
+    "image_name": "registry",
+    "description": "Docker Registry Docker image",
+    "logo_url": "icons/registry.png"
+  },
+  {
+    "name": "restic",
+    "image_name": "restic/restic",
+    "description": "Minimal container with the latest restic binary",
+    "logo_url": "icons/restic-restic.png"
+  },
+  {
     "name": "rethinkdb",
+    "image_name": "rethinkdb",
     "description": "RethinkDB is an open-source, document database that makes it easy to build and scale realtime apps.",
     "logo_url": "./icons/rethinkdb.png"
   },
   {
     "name": "rocket.chat",
+    "image_name": "rocket.chat",
     "description": "The Complete Open Source Chat Solution",
     "logo_url": "./icons/rocket.chat.png"
   },
   {
-    "name": "redmine",
-    "description": "Redmine is a flexible project management web application written using Ruby on Rails framework",
-    "logo_url": "./icons/redmine.png"
-  },
-  {
-    "name": "erlang",
-    "description": "Erlang is a programming language used to build massively scalable systems with high availability.",
-    "logo_url": "./icons/erlang.png"
-  },
-  {
-    "name": "elixir",
-    "description": "Elixir is a dynamic, functional language for building scalable and maintainable applications.",
-    "logo_url": "./icons/elixir.png"
-  },
-  {
-    "name": "kapacitor",
-    "description": "Kapacitor is an open source framework for processing, monitoring, and alerting on time series data.",
-    "logo_url": "./icons/kapacitor.png"
-  },
-  {
-    "name": "jruby",
-    "description": "JRuby (http://www.jruby.org) is an implementation of Ruby (http://www.ruby-lang.org) on the JVM.",
-    "logo_url": "./icons/jruby.png"
-  },
-  {
-    "name": "odoo",
-    "description": "Odoo (formerly known as OpenERP) is a suite of open-source business apps.",
-    "logo_url": "./icons/odoo.png"
-  },
-  {
-    "name": "mediawiki",
-    "description": "MediaWiki is a free software open source wiki package written in PHP.",
-    "logo_url": "./icons/mediawiki.png"
-  },
-  {
-    "name": "jetty",
-    "description": "Jetty provides a Web server and javax.servlet container.",
-    "logo_url": "./icons/jetty.png"
-  },
-  {
-    "name": "oraclelinux",
-    "description": "Official Docker builds of Oracle Linux.",
-    "logo_url": "./icons/oraclelinux.png"
-  },
-  {
-    "name": "pypy",
-    "description": "PyPy is a fast, compliant alternative implementation of the Python language.",
-    "logo_url": "./icons/pypy.png"
-  },
-  {
     "name": "rockylinux",
+    "image_name": "rockylinux",
     "description": "The official build of Rocky Linux.",
     "logo_url": "./icons/rockylinux.png"
   },
   {
-    "name": "clojure",
-    "description": "Clojure is a dialect of Lisp that runs on the JVM.",
-    "logo_url": "./icons/clojure.png"
-  },
-  {
-    "name": "arangodb",
-    "description": "ArangoDB - a scalable graph database system to drive value from connected data, faster.",
-    "logo_url": "./icons/arangodb.png"
-  },
-  {
-    "name": "xwiki",
-    "description": "XWiki: The Advanced Open Source Enterprise Wiki.",
-    "logo_url": "./icons/xwiki.png"
-  },
-  {
     "name": "ros",
+    "image_name": "ros",
     "description": "The Robot Operating System (ROS) is an open source project for building robot applications.",
     "logo_url": "./icons/ros.png"
   },
   {
-    "name": "archlinux",
-    "description": "Arch Linux is a simple, lightweight Linux distribution aimed for flexibility.",
-    "logo_url": "./icons/archlinux.png"
+    "name": "roundcubemail",
+    "image_name": "roundcube/roundcubemail",
+    "description": "The Roundcube Webmail suite",
+    "logo_url": "icons/roundcube-roundcubemail.svg"
   },
   {
-    "name": "swift",
-    "description": "Swift is a high-performance system programming language, to learn more about Swift visit swift.org.",
-    "logo_url": "./icons/swift.png"
+    "name": "rtorrent",
+    "image_name": "linuxserver/rtorrent",
+    "description": "rTorrent Docker image",
+    "logo_url": "icons/linuxserver-rtorrent.png"
   },
   {
-    "name": "znc",
-    "description": "ZNC - An advanced IRC bouncer",
-    "logo_url": "./icons/znc.png"
+    "name": "ruby",
+    "image_name": "ruby",
+    "description": "Ruby is a dynamic, reflective, object-oriented, general-purpose, open-source programming language.",
+    "logo_url": "./icons/ruby.png"
   },
   {
-    "name": "hylang",
-    "description": "Hy is a Lisp dialect that translates expressions into Python's abstract syntax tree.",
-    "logo_url": "./icons/hylang.png"
-  },
-  {
-    "name": "gcc",
-    "description": "The GNU Compiler Collection is a compiling system that supports several languages.",
-    "logo_url": "./icons/gcc.png"
-  },
-  {
-    "name": "tomee",
-    "description": "Apache TomEE is an all-Apache Java EE certified stack where Apache Tomcat is top dog.",
-    "logo_url": "./icons/tomee.png"
-  },
-  {
-    "name": "haxe",
-    "description": "Haxe is a modern, high level, static typed programming language with multiple compilation targets.",
-    "logo_url": "./icons/haxe.png"
-  },
-  {
-    "name": "websphere-liberty",
-    "description": "WebSphere Liberty multi-architecture images based on Ubuntu",
-    "logo_url": "./icons/websphere-liberty.png"
+    "name": "rust",
+    "image_name": "rust",
+    "description": "Rust is a systems programming language focused on safety, speed, and concurrency.",
+    "logo_url": "./icons/rust.png"
   },
   {
     "name": "sapmachine",
+    "image_name": "sapmachine",
     "description": "Official SapMachine Docker Image, SAP's build of OpenJDK.",
     "logo_url": "./icons/sapmachine.png"
   },
   {
-    "name": "yourls",
-    "description": "YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener.",
-    "logo_url": "./icons/yourls.png"
-  },
-  {
-    "name": "varnish",
-    "description": "Varnish is an HTTP accelerator designed for content-heavy dynamic web sites as well as APIs.",
-    "logo_url": "./icons/varnish.png"
-  },
-  {
-    "name": "crate",
-    "description": "CrateDB is an open-source, distributed SQL database empowering you to turn data into business value.",
-    "logo_url": "./icons/crate.png"
-  },
-  {
-    "name": "aerospike",
-    "description": "Aerospike – the reliable, high performance, distributed database optimized for flash and RAM.",
-    "logo_url": "./icons/aerospike.png"
-  },
-  {
-    "name": "photon",
-    "description": "Photon OS is an open source minimal Linux container host.",
-    "logo_url": "./icons/photon.png"
-  },
-  {
-    "name": "julia",
-    "description": "Julia is a high-level, high-performance dynamic programming language for technical computing.",
-    "logo_url": "./icons/julia.png"
-  },
-  {
-    "name": "orientdb",
-    "description": "OrientDB a Multi-Model Open Source NoSQL DBMS that combines graphs and documents.",
-    "logo_url": "./icons/orientdb.png"
-  },
-  {
-    "name": "open-liberty",
-    "description": "Open Liberty multi-architecture images based on Ubuntu",
-    "logo_url": "./icons/open-liberty.png"
-  },
-  {
-    "name": "bonita",
-    "description": "Bonita is an open-source business process management and workflow suite",
-    "logo_url": "./icons/bonita.png"
-  },
-  {
-    "name": "ibmjava",
-    "description": "Official IBM® SDK, Java™ Technology Edition Docker Image.",
-    "logo_url": "./icons/ibmjava.png"
-  },
-  {
-    "name": "monica",
-    "description": "Monica – the Personal Relationship Manager.",
-    "logo_url": "./icons/monica.png"
-  },
-  {
-    "name": "almalinux",
-    "description": "The official build of AlmaLinux OS.",
-    "logo_url": "./icons/almalinux.png"
-  },
-  {
-    "name": "fluentd",
-    "description": "Fluentd is an open source data collector for unified logging layer",
-    "logo_url": "./icons/fluentd.png"
-  },
-  {
-    "name": "r-base",
-    "description": "R is a system for statistical computation and graphics.",
-    "logo_url": "./icons/r-base.png"
-  },
-  {
-    "name": "ibm-semeru-runtimes",
-    "description": "IBM Semeru Runtimes Official Images for OpenJDK and Eclipse OpenJ9 binaries.",
-    "logo_url": "./icons/ibm-semeru-runtimes.png"
-  },
-  {
-    "name": "neurodebian",
-    "description": "NeuroDebian provides neuroscience research software for Debian, Ubuntu, and other derivatives.",
-    "logo_url": "./icons/neurodebian.png"
-  },
-  {
-    "name": "storm",
-    "description": "Apache Storm is a free and open source distributed realtime computation system.",
-    "logo_url": "./icons/storm.png"
-  },
-  {
-    "name": "irssi",
-    "description": "irssi - The IRC client of the future",
-    "logo_url": "./icons/irssi.png"
-  },
-  {
-    "name": "haskell",
-    "description": "Haskell is an advanced purely-functional programming language.",
-    "logo_url": "./icons/haskell.png"
-  },
-  {
-    "name": "backdrop",
-    "description": "The comprehensive CMS for small to medium sized businesses and non-profits.",
-    "logo_url": "./icons/backdrop.png"
-  },
-  {
-    "name": "cirros",
-    "description": "CirrOS is a Tiny OS that specializes in running on a cloud.",
-    "logo_url": "./icons/cirros.png"
-  },
-  {
-    "name": "lightstreamer",
-    "description": "Lightstreamer is a real-time messaging server optimized for the Internet.",
-    "logo_url": "./icons/lightstreamer.png"
-  },
-  {
-    "name": "geonetwork",
-    "description": "GeoNetwork is a FOSS catalog for spatially referenced resources.",
-    "logo_url": "./icons/geonetwork.png"
-  },
-  {
-    "name": "friendica",
-    "description": "Welcome to the free social web.",
-    "logo_url": "./icons/friendica.png"
-  },
-  {
-    "name": "postfixadmin",
-    "description": "Postfix Admin - web based administration interface for Postfix mail servers.",
-    "logo_url": "./icons/postfixadmin.png"
-  },
-  {
-    "name": "convertigo",
-    "description": "Enterprise grade full-stack Open source Low Code & No Code Platform for web & mobile application",
-    "logo_url": "./icons/convertigo.png"
-  },
-  {
-    "name": "gazebo",
-    "description": "Gazebo is an open source project for simulating robots, offering robust physics and rendering.",
-    "logo_url": "./icons/gazebo.png"
-  },
-  {
-    "name": "dart",
-    "description": "Dart is a client-optimized language for fast apps on any platform.",
-    "logo_url": "./icons/dart.png"
-  },
-  {
-    "name": "swipl",
-    "description": "SWI-Prolog offers a comprehensive free Prolog environment.",
-    "logo_url": "./icons/swipl.png"
-  },
-  {
-    "name": "eggdrop",
-    "description": "The official Docker image of Eggdrop- IRC's oldest actively-developed bot!",
-    "logo_url": "./icons/eggdrop.png"
-  },
-  {
-    "name": "rakudo-star",
-    "description": "Rakudo is a compiler for the Raku programming language.",
-    "logo_url": "./icons/rakudo-star.png"
-  },
-  {
-    "name": "silverpeas",
-    "description": "Silverpeas is a turnkey and open-source Collaborative and Social-Networking Portal.",
-    "logo_url": "./icons/silverpeas.png"
-  },
-  {
-    "name": "mageia",
-    "description": "Official Mageia base image",
-    "logo_url": "./icons/mageia.png"
-  },
-  {
-    "name": "spark",
-    "description": "Apache Spark - A unified analytics engine for large-scale data processing",
-    "logo_url": "./icons/spark.png"
-  },
-  {
-    "name": "clickhouse",
-    "description": "ClickHouse is the fastest and most resource efficient OSS database for real-time apps and analytics.",
-    "logo_url": "./icons/clickhouse.png"
-  },
-  {
-    "name": "alt",
-    "description": "The official build of ALT Linux.",
-    "logo_url": "./icons/alt.png"
-  },
-  {
-    "name": "hitch",
-    "description": "Hitch is a libev-based high performance SSL/TLS proxy by Varnish Software.",
-    "logo_url": "./icons/hitch.png"
-  },
-  {
     "name": "satosa",
+    "image_name": "satosa",
     "description": "SATOSA translates between auth protocols such as SAML2, OpenID Connect, and OAuth2.",
     "logo_url": "./icons/satosa.png"
   },
   {
-    "name": "krakend",
-    "description": "KrakenD is a stateless, high-performance, enterprise-ready, open source API gateway written in Go.",
-    "logo_url": "./icons/krakend.png"
+    "name": "seafile",
+    "image_name": "seafileltd/seafile",
+    "description": "Seafile Docker image",
+    "logo_url": "icons/seafileltd-seafile.png"
   },
   {
-    "name": "api-firewall",
-    "description": "A light-weighted API Firewall to protect your API endpoints with API Schema validation.",
-    "logo_url": "./icons/api-firewall.png"
+    "name": "server",
+    "image_name": "vaultwarden/server",
+    "description": "Alternative implementation of the Bitwarden server API in Rust, including the Web Vault.",
+    "logo_url": "icons/vaultwarden-server.png"
+  },
+  {
+    "name": "silverpeas",
+    "image_name": "silverpeas",
+    "description": "Silverpeas is a turnkey and open-source Collaborative and Social-Networking Portal.",
+    "logo_url": "./icons/silverpeas.png"
+  },
+  {
+    "name": "snipe-it",
+    "image_name": "snipe/snipe-it",
+    "description": "The *only* official docker hub repository for Snipe-IT from the maintainers of Snipe-IT.",
+    "logo_url": "icons/snipe-snipe-it.webp"
+  },
+  {
+    "name": "solr",
+    "image_name": "solr",
+    "description": "Solr is the blazing-fast, open source, multi-modal search platform built on Apache Lucene.",
+    "logo_url": "./icons/solr.png"
+  },
+  {
+    "name": "sonarqube",
+    "image_name": "sonarqube",
+    "description": "Official images for SonarQube, code analysis tool for code quality and security",
+    "logo_url": "./icons/sonarqube.png"
+  },
+  {
+    "name": "sonarr",
+    "image_name": "linuxserver/sonarr",
+    "description": "A Sonarr container, brought to you by LinuxServer.io. ",
+    "logo_url": "icons/linuxserver-sonarr.svg"
+  },
+  {
+    "name": "spark",
+    "image_name": "spark",
+    "description": "Apache Spark - A unified analytics engine for large-scale data processing",
+    "logo_url": "./icons/spark.png"
+  },
+  {
+    "name": "storm",
+    "image_name": "storm",
+    "description": "Apache Storm is a free and open source distributed realtime computation system.",
+    "logo_url": "./icons/storm.png"
+  },
+  {
+    "name": "supabase",
+    "image_name": "supabase/supabase",
+    "description": "Supabase Docker image",
+    "logo_url": "icons/supabase-supabase.svg"
+  },
+  {
+    "name": "swift",
+    "image_name": "swift",
+    "description": "Swift is a high-performance system programming language, to learn more about Swift visit swift.org.",
+    "logo_url": "./icons/swift.png"
+  },
+  {
+    "name": "swipl",
+    "image_name": "swipl",
+    "description": "SWI-Prolog offers a comprehensive free Prolog environment.",
+    "logo_url": "./icons/swipl.png"
+  },
+  {
+    "name": "synapse",
+    "image_name": "matrixdotorg/synapse",
+    "description": "Synapse, reference impl of a Matrix homeserver. https://matrix.org/",
+    "logo_url": "icons/matrixdotorg-synapse.png"
+  },
+  {
+    "name": "taiga-back",
+    "image_name": "taigaio/taiga-back",
+    "description": "Taiga Docker image",
+    "logo_url": "icons/taigaio-taiga-back.png"
+  },
+  {
+    "name": "telegraf",
+    "image_name": "telegraf",
+    "description": "Telegraf is an agent for collecting metrics and writing them to InfluxDB or other outputs.",
+    "logo_url": "./icons/telegraf.png"
+  },
+  {
+    "name": "timescaledb",
+    "image_name": "timescale/timescaledb",
+    "description": "A time-series database for high-performance real-time analytics packaged as a Postgres extension",
+    "logo_url": "icons/timescale-timescaledb.png"
+  },
+  {
+    "name": "tomcat",
+    "image_name": "tomcat",
+    "description": "Apache Tomcat is an open source implementation of the Java Servlet and JavaServer Pages technologies",
+    "logo_url": "./icons/tomcat.png"
+  },
+  {
+    "name": "tomee",
+    "image_name": "tomee",
+    "description": "Apache TomEE is an all-Apache Java EE certified stack where Apache Tomcat is top dog.",
+    "logo_url": "./icons/tomee.png"
+  },
+  {
+    "name": "traefik",
+    "image_name": "traefik",
+    "description": "Traefik, The Cloud Native Edge Router",
+    "logo_url": "./icons/traefik.png"
+  },
+  {
+    "name": "transmission",
+    "image_name": "linuxserver/transmission",
+    "description": "A Transmission container, brought to you by LinuxServer.io. ",
+    "logo_url": "icons/linuxserver-transmission.png"
+  },
+  {
+    "name": "ubooquity",
+    "image_name": "linuxserver/ubooquity",
+    "description": "A Ubooquity container, brought to you by LinuxServer.io.",
+    "logo_url": "icons/linuxserver-ubooquity.png"
+  },
+  {
+    "name": "ubuntu",
+    "image_name": "ubuntu",
+    "description": "Ubuntu is a Debian-based Linux operating system based on free software.",
+    "logo_url": "./icons/ubuntu.png"
+  },
+  {
+    "name": "umami",
+    "image_name": "umami-software/umami",
+    "description": "Umami Docker image",
+    "logo_url": "icons/umami-software-umami.png"
+  },
+  {
+    "name": "urbackup-server",
+    "image_name": "uroni/urbackup-server",
+    "description": "A multiarch docker image for a UrBackup server",
+    "logo_url": "icons/uroni-urbackup-server.png"
+  },
+  {
+    "name": "varnish",
+    "image_name": "varnish",
+    "description": "Varnish is an HTTP accelerator designed for content-heavy dynamic web sites as well as APIs.",
+    "logo_url": "./icons/varnish.png"
+  },
+  {
+    "name": "vault",
+    "image_name": "vault",
+    "description": "Vault is a tool for securely accessing secrets via a unified interface and tight access control.",
+    "logo_url": "./icons/vault.png"
+  },
+  {
+    "name": "vault",
+    "image_name": "hashicorp/vault",
+    "description": "Official vault docker images",
+    "logo_url": "icons/hashicorp-vault.svg"
+  },
+  {
+    "name": "web",
+    "image_name": "jitsi/web",
+    "description": "Jitsi Meet's web interface image",
+    "logo_url": "icons/jitsi-web.png"
+  },
+  {
+    "name": "websphere-liberty",
+    "image_name": "websphere-liberty",
+    "description": "WebSphere Liberty multi-architecture images based on Ubuntu",
+    "logo_url": "./icons/websphere-liberty.png"
+  },
+  {
+    "name": "wekan",
+    "image_name": "wekan/wekan",
+    "description": "Wekan Docker image",
+    "logo_url": "icons/wekan-wekan.png"
+  },
+  {
+    "name": "wiki",
+    "image_name": "requarks/wiki",
+    "description": "Wiki.js - A modern, lightweight and powerful wiki app built on NodeJS",
+    "logo_url": "icons/requarks-wiki.png"
+  },
+  {
+    "name": "wireguard",
+    "image_name": "linuxserver/wireguard",
+    "description": "WireGuard Docker image",
+    "logo_url": "icons/linuxserver-wireguard.webp"
+  },
+  {
+    "name": "wordpress",
+    "image_name": "wordpress",
+    "description": "The WordPress rich content management system can utilize plugins, widgets, and themes.",
+    "logo_url": "./icons/wordpress.png"
+  },
+  {
+    "name": "xwiki",
+    "image_name": "xwiki",
+    "description": "XWiki: The Advanced Open Source Enterprise Wiki.",
+    "logo_url": "./icons/xwiki.png"
+  },
+  {
+    "name": "yourls",
+    "image_name": "yourls",
+    "description": "YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener.",
+    "logo_url": "./icons/yourls.png"
+  },
+  {
+    "name": "zimbra",
+    "image_name": "zimbra/zimbra",
+    "description": "Zimbra Docker image",
+    "logo_url": "icons/zimbra-zimbra.png"
+  },
+  {
+    "name": "znc",
+    "image_name": "znc",
+    "description": "ZNC - An advanced IRC bouncer",
+    "logo_url": "./icons/znc.png"
+  },
+  {
+    "name": "zookeeper",
+    "image_name": "zookeeper",
+    "description": "Apache ZooKeeper is an open-source server which enables highly reliable distributed coordination.",
+    "logo_url": "./icons/zookeeper.png"
   }
 ]

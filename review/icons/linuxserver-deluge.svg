@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" cursor="default" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="e">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="c">
+      <stop offset="0" stop-color="#eeeeec"/>
+      <stop offset="1" stop-color="#eeeeec" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="d">
+      <stop offset="0"/>
+      <stop offset="1" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="b">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="a">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="f">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient xlink:href="#e" id="g" cx="11.707551" cy="36.527763" r="14.33681" fx="11.707551" fy="36.527763" gradientTransform="matrix(.56833945 -.14774444 .12240592 .69984003 9.8157812 6.7018745)" gradientUnits="userSpaceOnUse"/>
+    <radialGradient xlink:href="#f" id="h" cx="19.015932" cy="19.611181" r="15.627373" fx="19.015932" fy="19.611181" gradientTransform="matrix(-.21582873 1.1173231 -1.0803619 -.20155681 42.177326 -6.1234)" gradientUnits="userSpaceOnUse"/>
+  </defs>
+  <path fill="#4c90e8" fill-rule="evenodd" stroke="#094491" stroke-width="3.19036889" d="M24.00916 2.8848679 35.921225 21.107868c7.631218 11.674181-.393962 24.296949-11.919555 24.296949S4.4379288 32.777604 12.076064 21.11126z"/>
+  <path fill="#094491" fill-rule="evenodd" d="M28.249173 24.076764c-6.513399-2.656088-9.930764 4.129513-8.844266 7.299777 2.363892 6.897492 11.278562 8.624272 17.861607-2.864877 0 0 .07021 1.386537.139797 2.046235.884013 8.376987-6.162376 13.70953-13.302295 13.605305-7.139921-.104225-9.320813-2.876749-11.424685-6.068739-3.4133569-5.178732-2.561398-13.615464 2.027677-17.561337 5.237731-4.328395 11.004287-2.017675 13.542165 3.543636z"/>
+  <path fill="#83b8f9" fill-rule="evenodd" d="M24.158349 21.568695c-7.295351.177796-8.680227 8.584045-6.659444 12.185022 2.809336 5.006167 7.071815 5.968946 12.90485 4.121032-3.330593 3.620896-10.166138 4.579185-14.809086-.592946-3.194749-3.558875-3.473998-8.525976-1.256883-12.674161 2.217115-4.148189 6.638012-5.301549 9.820563-3.038947z"/>
+</svg>

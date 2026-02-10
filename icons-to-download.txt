@@ -1,0 +1,108 @@
+
+Supabase — supabase/supabase
+Portainer — portainer/portainer-ce
+Docker Registry — registry
+GitLab — gitlab/gitlab-ce
+Gitea — gitea/gitea
+Jenkins — jenkins/jenkins
+Drone — drone/drone
+Harbor — goharbor/harbor-core
+Rancher — rancher/rancher
+Traefik — traefik
+Nginx Proxy Manager — jc21/nginx-proxy-manager
+Caddy — caddy
+Vault — hashicorp/vault
+Consul — hashicorp/consul
+Prometheus — prom/prometheus
+Grafana — grafana/grafana
+Loki — grafana/loki
+Alertmanager — prom/alertmanager
+Netdata — netdata/netdata
+Zabbix — zabbix/zabbix-server-mysql
+Bases de datos
+PostgreSQL — postgres
+MySQL — mysql
+MariaDB — mariadb
+MongoDB — mongo
+Redis — redis
+InfluxDB — influxdb
+TimescaleDB — timescale/timescaledb
+Neo4j — neo4j
+CockroachDB — cockroachdb/cockroach
+MinIO — minio/minio
+Nextcloud — nextcloud
+ownCloud — owncloud/server
+Seafile — seafileltd/seafile
+Syncthing — syncthing/syncthing
+Restic — restic/restic
+Duplicati — linuxserver/duplicati
+UrBackup — uroni/urbackup-server
+Rclone — rclone/rclone
+Mailu — mailu/mailu
+Postfix — boky/postfix
+Dovecot — dovecot/dovecot
+Roundcube — roundcube/roundcubemail
+RainLoop — hardware/rainloop
+Zimbra — zimbra/zimbra
+Rocket.Chat — rocketchat/rocket.chat
+Mattermost — mattermost/mattermost-team-edition
+Zulip — zulip/docker-zulip
+Element — vectorim/element-web
+Synapse — matrixdotorg/synapse
+Jitsi Meet — jitsi/web
+OnlyOffice — onlyoffice/documentserver
+Collabora — collabora/code
+Wiki.js — requarks/wiki
+BookStack — linuxserver/bookstack
+DokuWiki — linuxserver/dokuwiki
+MediaWiki — mediawiki
+Kanboard — kanboard/kanboard
+Wekan — wekan/wekan
+Taiga — taigaio/taiga-back
+OpenProject — openproject/openproject
+Redmine — redmine
+Metabase — metabase/metabase
+Redash — redash/redash
+Apache Superset — apache/superset
+Matomo — matomo
+Plausible — plausible/analytics
+Umami — umami-software/umami
+Multimedia
+Jellyfin — jellyfin/jellyfin
+Plex — plexinc/pms-docker
+Emby — emby/embyserver
+Airsonic — airsonic/airsonic
+Funkwhale — funkwhale/all-in-one
+Navidrome — deluan/navidrome
+Ampache — ampache/ampache
+Audiobookshelf — advplyr/audiobookshelf
+Calibre Web — linuxserver/calibre-web
+Ubooquity — linuxserver/ubooquity
+Transmission — linuxserver/transmission
+qBittorrent — linuxserver/qbittorrent
+Deluge — linuxserver/deluge
+rTorrent — linuxserver/rtorrent
+Jackett — linuxserver/jackett
+Sonarr — linuxserver/sonarr
+Radarr — linuxserver/radarr
+Bazarr — linuxserver/bazarr
+Lidarr — linuxserver/lidarr
+NZBGet — linuxserver/nzbget
+Home Assistant — homeassistant/home-assistant
+Node-RED — nodered/node-red
+OpenHAB — openhab/openhab
+ioBroker — iobroker/iobroker
+Keycloak — quay.io/keycloak/keycloak
+Authelia — authelia/authelia
+Vaultwarden — vaultwarden/server
+Bitwarden — bitwarden/server
+Gluetun (VPN) — qmcgaw/gluetun
+OpenVPN — kylemanna/openvpn
+WireGuard — linuxserver/wireguard
+Paperless-ngx — paperlessngx/paperless-ngx
+Snipe-IT — snipe/snipe-it
+Invoice Ninja — invoiceninja/invoiceninja
+ERPNext — erpnext/erpnext
+Odoo — odoo
+Discourse — discourse/discourse
+Flarum — flaum/flaum (nota: comunidad usa variantes)

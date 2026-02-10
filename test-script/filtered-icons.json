@@ -1,0 +1,737 @@
+[
+  {
+    "name": "supabase",
+    "displayName": "Supabase",
+    "dockerImage": "supabase/supabase",
+    "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+    "logo_url": "./icons/supabase.png"
+  },
+  {
+    "name": "portainer-ce",
+    "displayName": "Portainer",
+    "dockerImage": "portainer/portainer-ce",
+    "description": "Portainer CE - a lightweight service delivery platform for containerized applications ",
+    "logo_url": "./icons/portainer-ce.jpg"
+  },
+  {
+    "name": "registry",
+    "displayName": "Docker Registry",
+    "dockerImage": "registry",
+    "description": "Docker Registry - Docker container",
+    "logo_url": "./icons/registry.jpg"
+  },
+  {
+    "name": "gitlab-ce",
+    "displayName": "GitLab",
+    "dockerImage": "gitlab/gitlab-ce",
+    "description": "GitLab Community Edition docker image based on the Omnibus package",
+    "logo_url": "./icons/gitlab-ce.svg"
+  },
+  {
+    "name": "gitea",
+    "displayName": "Gitea",
+    "dockerImage": "gitea/gitea",
+    "description": "Gitea: Git with a cup of tea - A painless self-hosted Git service.",
+    "logo_url": "./icons/gitea.jpg"
+  },
+  {
+    "name": "jenkins",
+    "displayName": "Jenkins",
+    "dockerImage": "jenkins/jenkins",
+    "description": "The leading open source automation server",
+    "logo_url": "./icons/jenkins.svg"
+  },
+  {
+    "name": "drone",
+    "displayName": "Drone",
+    "dockerImage": "drone/drone",
+    "description": "Drone is a Continuous Integration platform built on Docker",
+    "logo_url": "./icons/drone.jpg"
+  },
+  {
+    "name": "harbor-core",
+    "displayName": "Harbor",
+    "dockerImage": "goharbor/harbor-core",
+    "description": "Harbor - Docker container",
+    "logo_url": "./icons/harbor-core.jpg"
+  },
+  {
+    "name": "rancher",
+    "displayName": "Rancher",
+    "dockerImage": "rancher/rancher",
+    "description": "A container management platform built for organizations that deploy containers in production. ",
+    "logo_url": "./icons/rancher.jpg"
+  },
+  {
+    "name": "traefik",
+    "displayName": "Traefik",
+    "dockerImage": "traefik",
+    "description": "Traefik - Docker container",
+    "logo_url": "./icons/traefik.jpg"
+  },
+  {
+    "name": "nginx-proxy-manager",
+    "displayName": "Nginx Proxy Manager",
+    "dockerImage": "jc21/nginx-proxy-manager",
+    "description": "Docker container for managing Nginx proxy hosts with a simple, powerful interface",
+    "logo_url": "./icons/nginx-proxy-manager.jpg"
+  },
+  {
+    "name": "caddy",
+    "displayName": "Caddy",
+    "dockerImage": "caddy",
+    "description": "Caddy - Docker container",
+    "logo_url": "./icons/caddy.jpg"
+  },
+  {
+    "name": "vault",
+    "displayName": "Vault",
+    "dockerImage": "hashicorp/vault",
+    "description": "Official vault docker images",
+    "logo_url": "./icons/vault.jpg"
+  },
+  {
+    "name": "consul",
+    "displayName": "Consul",
+    "dockerImage": "hashicorp/consul",
+    "description": "Automatic build of consul based on the current release. See README for more information on usage.",
+    "logo_url": "./icons/consul.jpg"
+  },
+  {
+    "name": "prometheus",
+    "displayName": "Prometheus",
+    "dockerImage": "prom/prometheus",
+    "description": "prom/prometheus",
+    "logo_url": "./icons/prometheus.jpg"
+  },
+  {
+    "name": "grafana",
+    "displayName": "Grafana",
+    "dockerImage": "grafana/grafana",
+    "description": "The official Grafana docker container",
+    "logo_url": "./icons/grafana.svg"
+  },
+  {
+    "name": "loki",
+    "displayName": "Loki",
+    "dockerImage": "grafana/loki",
+    "description": "Loki - Cloud Native Log Aggregation by Grafana",
+    "logo_url": "./icons/loki.jpg"
+  },
+  {
+    "name": "alertmanager",
+    "displayName": "Alertmanager",
+    "dockerImage": "prom/alertmanager",
+    "description": "prom/alertmanager",
+    "logo_url": "./icons/alertmanager.jpg"
+  },
+  {
+    "name": "netdata",
+    "displayName": "Netdata",
+    "dockerImage": "netdata/netdata",
+    "description": "The official image for monitoring systems, containers and applications with Netdata.",
+    "logo_url": "./icons/netdata.jpg"
+  },
+  {
+    "name": "zabbix-server-mysql",
+    "displayName": "Zabbix",
+    "dockerImage": "zabbix/zabbix-server-mysql",
+    "description": "Zabbix Server with MySQL database support",
+    "logo_url": "./icons/zabbix-server-mysql.jpg"
+  },
+  {
+    "name": "postgres",
+    "displayName": "PostgreSQL",
+    "dockerImage": "postgres",
+    "description": "PostgreSQL - Docker container",
+    "logo_url": "./icons/postgres.jpg"
+  },
+  {
+    "name": "mysql",
+    "displayName": "MySQL",
+    "dockerImage": "mysql",
+    "description": "MySQL - Docker container",
+    "logo_url": "./icons/mysql.jpg"
+  },
+  {
+    "name": "mariadb",
+    "displayName": "MariaDB",
+    "dockerImage": "mariadb",
+    "description": "MariaDB - Docker container",
+    "logo_url": "./icons/mariadb.jpg"
+  },
+  {
+    "name": "mongo",
+    "displayName": "MongoDB",
+    "dockerImage": "mongo",
+    "description": "MongoDB - Docker container",
+    "logo_url": "./icons/mongo.jpg"
+  },
+  {
+    "name": "redis",
+    "displayName": "Redis",
+    "dockerImage": "redis",
+    "description": "Redis - Docker container",
+    "logo_url": "./icons/redis.jpg"
+  },
+  {
+    "name": "influxdb",
+    "displayName": "InfluxDB",
+    "dockerImage": "influxdb",
+    "description": "InfluxDB - Docker container",
+    "logo_url": "./icons/influxdb.jpg"
+  },
+  {
+    "name": "timescaledb",
+    "displayName": "TimescaleDB",
+    "dockerImage": "timescale/timescaledb",
+    "description": "A time-series database for high-performance real-time analytics packaged as a Postgres extension",
+    "logo_url": "./icons/timescaledb.jpg"
+  },
+  {
+    "name": "neo4j",
+    "displayName": "Neo4j",
+    "dockerImage": "neo4j",
+    "description": "Neo4j - Docker container",
+    "logo_url": "./icons/neo4j.jpg"
+  },
+  {
+    "name": "cockroach",
+    "displayName": "CockroachDB",
+    "dockerImage": "cockroachdb/cockroach",
+    "description": "CockroachDB — Distributed SQL database for always-on customer experiences",
+    "logo_url": "./icons/cockroach.jpg"
+  },
+  {
+    "name": "minio",
+    "displayName": "MinIO",
+    "dockerImage": "minio/minio",
+    "description": "Multi-Cloud Object Storage",
+    "logo_url": "./icons/minio.jpg"
+  },
+  {
+    "name": "nextcloud",
+    "displayName": "Nextcloud",
+    "dockerImage": "nextcloud",
+    "description": "Nextcloud - Docker container",
+    "logo_url": "./icons/nextcloud.jpg"
+  },
+  {
+    "name": "server",
+    "displayName": "ownCloud",
+    "dockerImage": "owncloud/server",
+    "description": "ownCloud - Secure Collaboration Platform",
+    "logo_url": "./icons/server.jpg"
+  },
+  {
+    "name": "seafile",
+    "displayName": "Seafile",
+    "dockerImage": "seafileltd/seafile",
+    "description": "Seafile - Docker container",
+    "logo_url": "./icons/seafile.jpg"
+  },
+  {
+    "name": "syncthing",
+    "displayName": "Syncthing",
+    "dockerImage": "syncthing/syncthing",
+    "description": "Open Source Continuous File Synchronization",
+    "logo_url": "./icons/syncthing.jpg"
+  },
+  {
+    "name": "restic",
+    "displayName": "Restic",
+    "dockerImage": "restic/restic",
+    "description": "Minimal container with the latest restic binary",
+    "logo_url": "./icons/restic.jpg"
+  },
+  {
+    "name": "duplicati",
+    "displayName": "Duplicati",
+    "dockerImage": "linuxserver/duplicati",
+    "description": "A Duplicati container, brought to you by LinuxServer.io.\n",
+    "logo_url": "./icons/duplicati.jpg"
+  },
+  {
+    "name": "urbackup-server",
+    "displayName": "UrBackup",
+    "dockerImage": "uroni/urbackup-server",
+    "description": "A multiarch docker image for a UrBackup server",
+    "logo_url": "./icons/urbackup-server.png"
+  },
+  {
+    "name": "rclone",
+    "displayName": "Rclone",
+    "dockerImage": "rclone/rclone",
+    "description": "Rclone syncs files and directories to and from different cloud storage providers.",
+    "logo_url": "./icons/rclone.jpg"
+  },
+  {
+    "name": "mailu",
+    "displayName": "Mailu",
+    "dockerImage": "mailu/mailu",
+    "description": "Insular email distribution - mail server as Docker images",
+    "logo_url": "./icons/mailu.jpg"
+  },
+  {
+    "name": "postfix",
+    "displayName": "Postfix",
+    "dockerImage": "boky/postfix",
+    "description": " Simple postfix relay host for your Docker containers. Based on Alpine Linux. ",
+    "logo_url": "./icons/postfix.jpg"
+  },
+  {
+    "name": "dovecot",
+    "displayName": "Dovecot",
+    "dockerImage": "dovecot/dovecot",
+    "description": "Dovecot CE repository",
+    "logo_url": "./icons/dovecot.jpg"
+  },
+  {
+    "name": "roundcubemail",
+    "displayName": "Roundcube",
+    "dockerImage": "roundcube/roundcubemail",
+    "description": "The Roundcube Webmail suite",
+    "logo_url": "./icons/roundcubemail.jpg"
+  },
+  {
+    "name": "rainloop",
+    "displayName": "RainLoop",
+    "dockerImage": "hardware/rainloop",
+    "description": "Rainloop is a simple, modern & fast web-based email client.",
+    "logo_url": "./icons/rainloop.jpg"
+  },
+  {
+    "name": "zimbra",
+    "displayName": "Zimbra",
+    "dockerImage": "zimbra/zimbra",
+    "description": "Zimbra - Docker container",
+    "logo_url": "./icons/zimbra.jpg"
+  },
+  {
+    "name": "rocket.chat",
+    "displayName": "Rocket.Chat",
+    "dockerImage": "rocketchat/rocket.chat",
+    "description": "Official Rocket.Chat docker deployment image.  ",
+    "logo_url": "./icons/rocket.chat.jpg"
+  },
+  {
+    "name": "mattermost-team-edition",
+    "displayName": "Mattermost",
+    "dockerImage": "mattermost/mattermost-team-edition",
+    "description": " The official Docker image for Mattermost Team Edition.",
+    "logo_url": "./icons/mattermost-team-edition.jpg"
+  },
+  {
+    "name": "docker-zulip",
+    "displayName": "Zulip",
+    "dockerImage": "zulip/docker-zulip",
+    "description": "The official Zulip Server Docker image.",
+    "logo_url": "./icons/docker-zulip.jpg"
+  },
+  {
+    "name": "element-web",
+    "displayName": "Element",
+    "dockerImage": "vectorim/element-web",
+    "description": "A glossy Matrix collaboration client for the web.",
+    "logo_url": "./icons/element-web.jpg"
+  },
+  {
+    "name": "synapse",
+    "displayName": "Synapse",
+    "dockerImage": "matrixdotorg/synapse",
+    "description": "Synapse, reference impl of a Matrix homeserver. https://matrix.org/",
+    "logo_url": "./icons/synapse.jpg"
+  },
+  {
+    "name": "web",
+    "displayName": "Jitsi Meet",
+    "dockerImage": "jitsi/web",
+    "description": "Jitsi Meet's web interface image",
+    "logo_url": "./icons/web.jpg"
+  },
+  {
+    "name": "documentserver",
+    "displayName": "OnlyOffice",
+    "dockerImage": "onlyoffice/documentserver",
+    "description": "Feature-rich web-based office suite with a vast range of collaborative capabilities ",
+    "logo_url": "./icons/documentserver.jpg"
+  },
+  {
+    "name": "code",
+    "displayName": "Collabora",
+    "dockerImage": "collabora/code",
+    "description": "Collabora Online Development Edition – an awesome, Online Office suite image suitable for home use.",
+    "logo_url": "./icons/code.jpg"
+  },
+  {
+    "name": "wiki",
+    "displayName": "Wiki.js",
+    "dockerImage": "requarks/wiki",
+    "description": "Wiki.js - A modern, lightweight and powerful wiki app built on NodeJS",
+    "logo_url": "./icons/wiki.svg"
+  },
+  {
+    "name": "bookstack",
+    "displayName": "BookStack",
+    "dockerImage": "linuxserver/bookstack",
+    "description": "<!-- DO NOT EDIT THIS FILE MANUALLY -->",
+    "logo_url": "./icons/bookstack.jpg"
+  },
+  {
+    "name": "dokuwiki",
+    "displayName": "DokuWiki",
+    "dockerImage": "linuxserver/dokuwiki",
+    "description": "<!-- DO NOT EDIT THIS FILE MANUALLY -->",
+    "logo_url": "./icons/dokuwiki.jpg"
+  },
+  {
+    "name": "mediawiki",
+    "displayName": "MediaWiki",
+    "dockerImage": "mediawiki",
+    "description": "MediaWiki - Docker container",
+    "logo_url": "./icons/mediawiki.jpg"
+  },
+  {
+    "name": "kanboard",
+    "displayName": "Kanboard",
+    "dockerImage": "kanboard/kanboard",
+    "description": "Official Docker image for Kanboard",
+    "logo_url": "./icons/kanboard.png"
+  },
+  {
+    "name": "wekan",
+    "displayName": "Wekan",
+    "dockerImage": "wekan/wekan",
+    "description": "The Open Source kanban, built with Meteor. GitHub issues/PRs are only for FLOSS Developers, not for support, support is at https://wekan.fi/commercial-support/ . New English strings for new features a",
+    "logo_url": "./icons/wekan.svg"
+  },
+  {
+    "name": "taiga-back",
+    "displayName": "Taiga",
+    "dockerImage": "taigaio/taiga-back",
+    "description": "# taiga-back docker image",
+    "logo_url": "./icons/taiga-back.jpg"
+  },
+  {
+    "name": "openproject",
+    "displayName": "OpenProject",
+    "dockerImage": "openproject/openproject",
+    "description": "Docker image for OpenProject Community and Enterprise editions.",
+    "logo_url": "./icons/openproject.jpg"
+  },
+  {
+    "name": "redmine",
+    "displayName": "Redmine",
+    "dockerImage": "redmine",
+    "description": "Redmine - Docker container",
+    "logo_url": "./icons/redmine.jpg"
+  },
+  {
+    "name": "metabase",
+    "displayName": "Metabase",
+    "dockerImage": "metabase/metabase",
+    "description": "Metabase Open-source Edition Docker image.",
+    "logo_url": "./icons/metabase.svg"
+  },
+  {
+    "name": "redash",
+    "displayName": "Redash",
+    "dockerImage": "redash/redash",
+    "description": "Official Docker images for the Redash project.",
+    "logo_url": "./icons/redash.jpg"
+  },
+  {
+    "name": "superset",
+    "displayName": "Apache Superset",
+    "dockerImage": "apache/superset",
+    "description": "Apache Superset",
+    "logo_url": "./icons/superset.jpg"
+  },
+  {
+    "name": "matomo",
+    "displayName": "Matomo",
+    "dockerImage": "matomo",
+    "description": "Matomo - Docker container",
+    "logo_url": "./icons/matomo.jpg"
+  },
+  {
+    "name": "analytics",
+    "displayName": "Plausible",
+    "dockerImage": "plausible/analytics",
+    "description": "Simple, lightweight analytics for your website",
+    "logo_url": "./icons/analytics.jpg"
+  },
+  {
+    "name": "umami",
+    "displayName": "Umami",
+    "dockerImage": "umami-software/umami",
+    "description": "Umami is a modern, privacy-focused analytics platform. An open-source alternative to Google Analytics, Mixpanel and Amplitude.",
+    "logo_url": "./icons/umami.jpg"
+  },
+  {
+    "name": "jellyfin",
+    "displayName": "Jellyfin",
+    "dockerImage": "jellyfin/jellyfin",
+    "description": "The Free Software Media Browser ",
+    "logo_url": "./icons/jellyfin.svg"
+  },
+  {
+    "name": "pms-docker",
+    "displayName": "Plex",
+    "dockerImage": "plexinc/pms-docker",
+    "description": "Official Plex Media Server Docker Repo",
+    "logo_url": "./icons/pms-docker.jpg"
+  },
+  {
+    "name": "embyserver",
+    "displayName": "Emby",
+    "dockerImage": "emby/embyserver",
+    "description": "Official Emby Media Server (amd64)",
+    "logo_url": "./icons/embyserver.jpg"
+  },
+  {
+    "name": "airsonic",
+    "displayName": "Airsonic",
+    "dockerImage": "airsonic/airsonic",
+    "description": "Airsonic Media Server",
+    "logo_url": "./icons/airsonic.jpg"
+  },
+  {
+    "name": "all-in-one",
+    "displayName": "Funkwhale",
+    "dockerImage": "funkwhale/all-in-one",
+    "description": "DON'T USE! https://blog.funkwhale.audio/deprecation-all-in-one-container.html",
+    "logo_url": "./icons/all-in-one.jpg"
+  },
+  {
+    "name": "navidrome",
+    "displayName": "Navidrome",
+    "dockerImage": "deluan/navidrome",
+    "description": "Official image for Navidrome Music Server",
+    "logo_url": "./icons/navidrome.jpg"
+  },
+  {
+    "name": "ampache",
+    "displayName": "Ampache",
+    "dockerImage": "ampache/ampache",
+    "description": "Ampache ...for the love of music - https://ampache.org",
+    "logo_url": "./icons/ampache.jpg"
+  },
+  {
+    "name": "audiobookshelf",
+    "displayName": "Audiobookshelf",
+    "dockerImage": "advplyr/audiobookshelf",
+    "description": "Self-hosted audiobook and podcast server",
+    "logo_url": "./icons/audiobookshelf.jpg"
+  },
+  {
+    "name": "calibre-web",
+    "displayName": "Calibre Web",
+    "dockerImage": "linuxserver/calibre-web",
+    "description": "A Calibre-Web container, brought to you by LinuxServer.io.",
+    "logo_url": "./icons/calibre-web.jpg"
+  },
+  {
+    "name": "ubooquity",
+    "displayName": "Ubooquity",
+    "dockerImage": "linuxserver/ubooquity",
+    "description": "A Ubooquity container, brought to you by LinuxServer.io.",
+    "logo_url": "./icons/ubooquity.jpg"
+  },
+  {
+    "name": "transmission",
+    "displayName": "Transmission",
+    "dockerImage": "linuxserver/transmission",
+    "description": "A Transmission container, brought to you by LinuxServer.io. ",
+    "logo_url": "./icons/transmission.jpg"
+  },
+  {
+    "name": "qbittorrent",
+    "displayName": "qBittorrent",
+    "dockerImage": "linuxserver/qbittorrent",
+    "description": "A Qbittorrent container, brought to you by LinuxServer.io.",
+    "logo_url": "./icons/qbittorrent.jpg"
+  },
+  {
+    "name": "deluge",
+    "displayName": "Deluge",
+    "dockerImage": "linuxserver/deluge",
+    "description": "A Deluge container, brought to you by LinuxServer.io. ",
+    "logo_url": "./icons/deluge.jpg"
+  },
+  {
+    "name": "rtorrent",
+    "displayName": "rTorrent",
+    "dockerImage": "linuxserver/rtorrent",
+    "description": "rTorrent - Docker container",
+    "logo_url": "./icons/rtorrent.jpg"
+  },
+  {
+    "name": "jackett",
+    "displayName": "Jackett",
+    "dockerImage": "linuxserver/jackett",
+    "description": "A Jackett container, brought to you by LinuxServer.io. ",
+    "logo_url": "./icons/jackett.jpg"
+  },
+  {
+    "name": "sonarr",
+    "displayName": "Sonarr",
+    "dockerImage": "linuxserver/sonarr",
+    "description": "A Sonarr container, brought to you by LinuxServer.io. ",
+    "logo_url": "./icons/sonarr.jpg"
+  },
+  {
+    "name": "radarr",
+    "displayName": "Radarr",
+    "dockerImage": "linuxserver/radarr",
+    "description": "A Radarr container, brought to you by LinuxServer.io.",
+    "logo_url": "./icons/radarr.jpg"
+  },
+  {
+    "name": "bazarr",
+    "displayName": "Bazarr",
+    "dockerImage": "linuxserver/bazarr",
+    "description": "<!-- DO NOT EDIT THIS FILE MANUALLY -->",
+    "logo_url": "./icons/bazarr.jpg"
+  },
+  {
+    "name": "lidarr",
+    "displayName": "Lidarr",
+    "dockerImage": "linuxserver/lidarr",
+    "description": "<!-- DO NOT EDIT THIS FILE MANUALLY -->",
+    "logo_url": "./icons/lidarr.jpg"
+  },
+  {
+    "name": "nzbget",
+    "displayName": "NZBGet",
+    "dockerImage": "linuxserver/nzbget",
+    "description": "An Nzbget container, brought to you by LinuxServer.io. ",
+    "logo_url": "./icons/nzbget.jpg"
+  },
+  {
+    "name": "home-assistant",
+    "displayName": "Home Assistant",
+    "dockerImage": "homeassistant/home-assistant",
+    "description": "Open source home automation that puts local control and privacy first. ",
+    "logo_url": "./icons/home-assistant.svg"
+  },
+  {
+    "name": "node-red",
+    "displayName": "Node-RED",
+    "dockerImage": "nodered/node-red",
+    "description": "Low-code programming for event-driven applications",
+    "logo_url": "./icons/node-red.svg"
+  },
+  {
+    "name": "openhab",
+    "displayName": "OpenHAB",
+    "dockerImage": "openhab/openhab",
+    "description": "openHAB - a vendor and technology agnostic open source automation software for your home.",
+    "logo_url": "./icons/openhab.jpg"
+  },
+  {
+    "name": "iobroker",
+    "displayName": "ioBroker",
+    "dockerImage": "iobroker/iobroker",
+    "description": "Official Docker image for ioBroker based on Debian Bookworm slim",
+    "logo_url": "./icons/iobroker.png"
+  },
+  {
+    "name": "keycloak",
+    "displayName": "Keycloak",
+    "dockerImage": "quay.io/keycloak/keycloak",
+    "description": "Keycloak - Docker container",
+    "logo_url": "./icons/keycloak.jpg"
+  },
+  {
+    "name": "authelia",
+    "displayName": "Authelia",
+    "dockerImage": "authelia/authelia",
+    "description": "The Cloud ready multi-factor authentication portal for your Apps https://www.authelia.com",
+    "logo_url": "./icons/authelia.png"
+  },
+  {
+    "name": "server",
+    "displayName": "Vaultwarden",
+    "dockerImage": "vaultwarden/server",
+    "description": "Alternative implementation of the Bitwarden server API in Rust, including the Web Vault.",
+    "logo_url": "./icons/server.jpg"
+  },
+  {
+    "name": "server",
+    "displayName": "Bitwarden",
+    "dockerImage": "bitwarden/server",
+    "description": "Bitwarden infrastructure/backend (API, database, Docker, etc).",
+    "logo_url": "./icons/server.jpg"
+  },
+  {
+    "name": "gluetun",
+    "displayName": "Gluetun (VPN)",
+    "dockerImage": "qmcgaw/gluetun",
+    "description": "Lightweight Swiss-knife VPN client to connect to several VPN providers",
+    "logo_url": "./icons/gluetun.jpg"
+  },
+  {
+    "name": "openvpn",
+    "displayName": "OpenVPN",
+    "dockerImage": "kylemanna/openvpn",
+    "description": "🔒 OpenVPN server in a Docker container complete with an EasyRSA PKI CA",
+    "logo_url": "./icons/openvpn.jpg"
+  },
+  {
+    "name": "wireguard",
+    "displayName": "WireGuard",
+    "dockerImage": "linuxserver/wireguard",
+    "description": "# [linuxserver/wireguard](https://github.com/linuxserver/docker-wireguard)",
+    "logo_url": "./icons/wireguard.jpg"
+  },
+  {
+    "name": "paperless-ngx",
+    "displayName": "Paperless-ngx",
+    "dockerImage": "paperlessngx/paperless-ngx",
+    "description": "[![ci](https://github.com/paperless-ngx/paperless-ngx/workflows/ci/badge.svg)](https://github.com/paperless-ngx/paperless-ngx/actions)",
+    "logo_url": "./icons/paperless-ngx.png"
+  },
+  {
+    "name": "snipe-it",
+    "displayName": "Snipe-IT",
+    "dockerImage": "snipe/snipe-it",
+    "description": "The *only* official docker hub repository for Snipe-IT from the maintainers of Snipe-IT.",
+    "logo_url": "./icons/snipe-it.jpg"
+  },
+  {
+    "name": "invoiceninja",
+    "displayName": "Invoice Ninja",
+    "dockerImage": "invoiceninja/invoiceninja",
+    "description": "Invoices, Expenses and Tasks built with Laravel, Flutter and React",
+    "logo_url": "./icons/invoiceninja.jpg"
+  },
+  {
+    "name": "erpnext",
+    "displayName": "ERPNext",
+    "dockerImage": "erpnext/erpnext",
+    "description": "ERPNext - Docker container",
+    "logo_url": "./icons/erpnext.jpg"
+  },
+  {
+    "name": "odoo",
+    "displayName": "Odoo",
+    "dockerImage": "odoo",
+    "description": "Odoo - Docker container",
+    "logo_url": "./icons/odoo.jpg"
+  },
+  {
+    "name": "discourse",
+    "displayName": "Discourse",
+    "dockerImage": "discourse/discourse",
+    "description": "see: https://github.com/discourse/discourse/blob/main/README.md\n",
+    "logo_url": "./icons/discourse.png"
+  },
+  {
+    "name": "flaum (nota: comunidad usa variantes)",
+    "displayName": "Flarum",
+    "dockerImage": "flaum/flaum (nota: comunidad usa variantes)",
+    "description": "Flarum - Docker container",
+    "logo_url": "./icons/flaum (nota: comunidad usa variantes).jpg"
+  }
+]
