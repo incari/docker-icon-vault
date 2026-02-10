@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Docker Icon Vault - Searchable Icon Collection</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+          Cantarell, sans-serif;
+        line-height: 1.6;
+        color: #e2e8f0;
+        background-color: rgb(15, 23, 42);
+      }
+
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px;
+        padding-bottom: 80px;
+      }
+
+      header {
+        background: rgba(15, 23, 42, 0.8);
+        color: white;
+        padding: 30px 0;
+        margin-bottom: 30px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      header h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+      }
+
+      header p {
+        font-size: 1.1em;
+        opacity: 0.9;
+      }
+
+      .search-box {
+        background: rgba(30, 41, 59, 0.5);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        margin-bottom: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .search-input {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        border-radius: 6px;
+        transition: border-color 0.3s;
+        background: rgba(15, 23, 42, 0.5);
+        color: #e2e8f0;
+      }
+
+      .search-input::placeholder {
+        color: rgba(226, 232, 240, 0.5);
+      }
+
+      .search-input:focus {
+        outline: none;
+        border-color: #3498db;
+        background: rgba(15, 23, 42, 0.8);
+      }
+
+      .stats {
+        text-align: center;
+        margin-bottom: 20px;
+        color: rgba(226, 232, 240, 0.7);
+        font-size: 14px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-bottom: 40px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @media (max-width: 768px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .card {
+        background: rgba(30, 41, 59, 0.4);
+        border-radius: 8px;
+        padding: 12px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        transition: all 0.2s;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .card:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        border-color: rgba(52, 152, 219, 0.5);
+        background: rgba(30, 41, 59, 0.6);
+      }
+
+      .card-icon-wrapper {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        flex-shrink: 0;
+        overflow: hidden;
+        background: linear-gradient(
+          to bottom right,
+          rgba(52, 152, 219, 0.1),
+          rgba(52, 152, 219, 0.05)
+        );
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .card-icon {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .card-content {
+        min-width: 0;
+        flex: 1;
+      }
+
+      .card-header {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 2px;
+      }
+
+      .card-status {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        background: #10b981;
+        box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+      }
+
+      .card-title {
+        font-size: 13px;
+        font-weight: 600;
+        color: #e2e8f0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .card-meta {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 10px;
+        font-family: "Courier New", monospace;
+        color: rgba(226, 232, 240, 0.6);
+        margin-top: 2px;
+      }
+
+      .card-name {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .card-description {
+        font-size: 11px;
+        color: rgba(226, 232, 240, 0.7);
+        margin-top: 4px;
+        line-height: 1.4;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .card-url {
+        font-size: 10px;
+        color: rgba(52, 152, 219, 0.8);
+        font-family: "Courier New", monospace;
+        margin-top: 4px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .card-actions {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        flex-shrink: 0;
+      }
+
+      .copy-btn {
+        padding: 8px;
+        background: #3498db;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .copy-btn:hover {
+        background: #2980b9;
+        transform: translateY(-1px);
+      }
+
+      .copy-btn:active {
+        transform: translateY(0);
+      }
+
+      .copy-btn.copied {
+        background: #10b981;
+      }
+
+      .copy-btn svg {
+        display: block;
+      }
+
+      .no-results {
+        text-align: center;
+        padding: 60px 20px;
+        color: rgba(226, 232, 240, 0.5);
+        font-size: 18px;
+      }
+
+      .loading {
+        text-align: center;
+        padding: 60px 20px;
+        font-size: 18px;
+        color: rgba(226, 232, 240, 0.7);
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 20px;
+        color: rgba(226, 232, 240, 0.7);
+        background: rgba(15, 23, 42, 0.95);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        z-index: 100;
+        font-size: 14px;
+      }
+
+      footer a {
+        color: #3498db;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s;
+      }
+
+      footer a:hover {
+        color: #2980b9;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>🐳 Docker Icon Vault</h1>
+        <p>A curated collection of icons for Docker images</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Search by name or image name... (e.g., 'nginx', 'portainer', 'linuxserver')"
+          autocomplete="off"
+        />
+      </div>
+
+      <div
+        class="stats"
+        id="stats"
+      >
+        Loading...
+      </div>
+
+      <div
+        id="results"
+        class="loading"
+      >
+        Loading Docker images...
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Docker Icon Vault &copy; 2024 |
+        <a
+          href="https://github.com/incari/docker-icon-vault"
+          target="_blank"
+          >GitHub Repository</a
+        >
+        |
+        <a
+          href="https://incari.github.io/docker-icon-vault/list.json"
+          target="_blank"
+          >📦 API (JSON)</a
+        >
+        |
+        <a
+          href="https://github.com/incari/docker-dash"
+          target="_blank"
+          >🚀 Self-hosted Docker Dashboard</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      let allImages = [];
+      let filteredImages = [];
+
+      // Load the JSON data
+      async function loadData() {
+        try {
+          const response = await fetch("list.json");
+          allImages = await response.json();
+          filteredImages = allImages;
+          renderResults();
+          updateStats();
+        } catch (error) {
+          document.getElementById("results").innerHTML =
+            '<div class="no-results">Error loading data. Please try again later.</div>';
+          console.error("Error loading data:", error);
+        }
+      }
+
+      // Search function
+      function searchImages(query) {
+        const searchTerm = query.toLowerCase().trim();
+
+        if (!searchTerm) {
+          filteredImages = allImages;
+        } else {
+          filteredImages = allImages.filter((image) => {
+            const name = (image.name || "").toLowerCase();
+            const imageName = (image.image_name || "").toLowerCase();
+            const description = (image.description || "").toLowerCase();
+
+            return (
+              name.includes(searchTerm) ||
+              imageName.includes(searchTerm) ||
+              description.includes(searchTerm)
+            );
+          });
+        }
+
+        renderResults();
+        updateStats();
+      }
+
+      // Render results
+      function renderResults() {
+        const resultsDiv = document.getElementById("results");
+
+        if (filteredImages.length === 0) {
+          resultsDiv.innerHTML =
+            '<div class="no-results">No images found. Try a different search term.</div>';
+          return;
+        }
+
+        const grid = document.createElement("div");
+        grid.className = "grid";
+
+        filteredImages.forEach((image) => {
+          const logoUrl = image.logo_url.startsWith("./")
+            ? image.logo_url.substring(2)
+            : image.logo_url;
+          const cdnUrl = `https://incari.github.io/docker-icon-vault/${logoUrl}`;
+
+          const card = document.createElement("div");
+          card.className = "card";
+          card.innerHTML = `
+            <div class="card-icon-wrapper">
+              <img src="${logoUrl}" alt="${image.image_name}" class="card-icon" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2240%22 height=%2240%22%3E%3Crect fill=%22%23ddd%22 width=%2240%22 height=%2240%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23999%22 font-size=%2214%22%3E?%3C/text%3E%3C/svg%3E'">
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <div class="card-status"></div>
+                <h3 class="card-title">${image.image_name}</h3>
+              </div>
+              <div class="card-meta">
+                <span class="card-name">${image.name}</span>
+              </div>
+              <div class="card-description">${image.description}</div>
+              <div class="card-url">${cdnUrl}</div>
+            </div>
+            <div class="card-actions">
+              <button class="copy-btn" onclick="copyToClipboard('${cdnUrl}', this)" title="Copy URL">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
+          `;
+          grid.appendChild(card);
+        });
+
+        resultsDiv.innerHTML = "";
+        resultsDiv.appendChild(grid);
+      }
+
+      // Update stats
+      function updateStats() {
+        const statsDiv = document.getElementById("stats");
+        const total = allImages.length;
+        const showing = filteredImages.length;
+
+        if (showing === total) {
+          statsDiv.textContent = `Showing all ${total} Docker images`;
+        } else {
+          statsDiv.textContent = `Showing ${showing} of ${total} Docker images`;
+        }
+      }
+
+      // Copy to clipboard function
+      function copyToClipboard(text, button) {
+        navigator.clipboard
+          .writeText(text)
+          .then(() => {
+            const originalText = button.textContent;
+            button.textContent = "Copied!";
+            button.classList.add("copied");
+
+            setTimeout(() => {
+              button.textContent = originalText;
+              button.classList.remove("copied");
+            }, 2000);
+          })
+          .catch((err) => {
+            console.error("Failed to copy:", err);
+            alert("Failed to copy URL");
+          });
+      }
+
+      // Event listeners
+      document.getElementById("searchInput").addEventListener("input", (e) => {
+        searchImages(e.target.value);
+      });
+
+      // Load data on page load
+      loadData();
+    </script>
+  </body>
+</html>

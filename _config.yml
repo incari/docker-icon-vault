@@ -1,0 +1,5 @@
+# Disable Jekyll processing
+# This ensures index.html is served as-is
+include:
+  - index.html
+
